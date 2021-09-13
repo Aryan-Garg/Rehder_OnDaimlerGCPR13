@@ -1,2 +1,2 @@
-### Please add the Data folder(actual images), my upload speed is very low
+### Please add the Data folder(actual images); Upload speed is very low 
 ## Dataset Specs
