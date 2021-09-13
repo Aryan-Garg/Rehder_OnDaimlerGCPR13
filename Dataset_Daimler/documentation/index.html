@@ -1,0 +1,394 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>Daimler Stereo Pedestrian Detection Benchmark</title>
+
+
+
+
+
+
+
+
+  
+    
+    <link rel="stylesheet" type="text/css" href="styles.css"></head><body>
+    <h1>Daimler Pedestrian Path Prediction Benchmark Dataset</h1>
+    <hr>
+    
+    <div class="title">Nicolas Schneider and Dariu M. Gavrila<br>August 29, 2013<br>
+      (C) 2013 by Daimler AG
+    </div>
+
+    <hr>
+
+    <h2>Contents</h2>
+    <ol> 
+      <li class="h3"><a href="#introduction">Introduction</a>
+      </li><li class="h3"><a href="#license">License Agreement</a>
+      </li><li class="h3"><a href="#datasets">Dataset</a>
+      </li><li class="h3"><a href="#truth">Ground Truth</a>
+      </li><li class="h3"><a href="#truth">Camera Parameters</a>
+      </li><li class="h3"><a href="#database">Ground Truth File Format</a>
+      </li><li class="h3"><a href="#benchmarking">Benchmarking Procedure</a>
+      </li><li class="h3"><a href="#parser">Ground Truth Parser (Matlab)</a>
+      </li><li class="h3"><a href="#contact">Contact</a>
+    </li></ol>
+
+    <hr>
+    
+    <a name="introduction"></a>
+    <h2>Introduction</h2>
+    <p>
+      This README describes the Daimler Pedestrian Path Prediction Benchmark Dataset introduced
+      in the publication
+    </p>
+    <p>N. Schneider and D. M. Gavrila. <b>Pedestrian Path Prediction with Recursive Bayesian Filters: A Comparative Study</b><br><span style="font-style: italic;">German Conference on Pattern Recognition (GCPR)</span><i> 2013</i>
+    </p>
+    <p>
+This dataset contains a collection of sequences with pedestrian
+trajectory data including stereo image pairs, ground truth annotations
+and pedestrian detector measurements. It is made publicly available to
+academic and non-academic entities for research purposes. </p>
+
+
+    <hr>
+
+
+    <a name="license"></a>
+    <h2>License Agreement</h2>
+    <p>
+      This dataset is made freely available to academic and non-academic entities for 
+      research purposes such as academic research, teaching, scientific publications,
+      or personal experimentation. Permission is granted to use, copy, and distribute
+      the data given that you agree:     
+    </p>
+    <ol>
+      <li>
+	That the dataset comes "AS IS", without express or implied warranty.
+	Although every effort has been made to ensure accuracy, Daimler 
+	does not accept any responsibility for errors or omissions.
+      </li>
+
+      <li>
+	That you include a reference to the above publication in any published work
+	that makes use of the dataset.
+      </li>
+
+      <li>
+	That if you have altered the content of the dataset or created derivative
+	work, prominent notices are made so that any recipients know that they are
+	not receiving the original data.
+      </li>
+
+      <li>
+	That you may not use or distribute the dataset or any derivative work for
+	commercial purposes as, for example, licensing or selling the data, or
+	using the data with a purpose to procure a commercial gain.
+      </li>
+
+      <li>
+	That this license agreement is retained with all copies of the dataset.
+      </li>
+
+      <li>
+	That all rights not expressly granted to you are reserved by
+	Daimler.
+      </li>
+    </ol>
+   
+   
+
+
+    <hr>
+
+
+    <a name="datasets"></a>
+    <h2>Dataset</h2>
+    
+<p>This dataset contains a collection of 68 sequences with pedestrian
+trajectory data including 8bit PGM stereo image pairs (1176x640 pixels), ground truth annotations
+and pedestrian detector measurements.</p>
+<p>The sequences have a total of 19612 stereo image pairs (c0 = left
+image, c1 = right image) with 12489 images containing (single) manual
+labelled pedestrian bounding boxes and 9316 images containing
+pedestrian detector measurements.&nbsp; For evaluation a range of 5-50m
+has been defined and only bounding boxes with valid disparity have been
+used leading to 9135 ground truth and 7908 measurement objects.
+Sequences are further labeled with event tags and time-to-event (TTE in
+frames) values. For stopping pedestrians the last placement of the foot
+on the ground at the curbside is labeled as TTE = 0. For crossing
+pedestrians, the closest point to the curbside (before entering the
+roadway), for pedestrians bending in and starting to walk the first
+moment of visually recognizable body turning or leg movements are
+labeled with TTE = 0. All frames previous to an event have TTE values
+&gt; 0 , therefore all frames following the event have TTE values &lt;
+0 .</p>
+<p>Sequences are split into training and test data. For installation, simply extract the provided <i>.tar.gz</i> archives. This will create the folders </p><pre>Data/TestData</pre> and <pre>Data/TrainingData</pre>
+  <p></p><br>
+<h2><small>Ground truth</small><br>
+</h2>
+<p>Ground Truth is obtained by manual labeling of pedestrian bounding
+box position in the left camera image (top-left pixel is (0,0)) and
+computating the median disparity over the rough upper pedestrian body
+area. Pedestrian positions in the vehicle coordinate system are derived
+with median
+disparity, pedestrian footpoint in the bounding box, camera paremters,
+vehicle ego motion and camera-to-vehicle homography matrix. The
+transformed positions are fitted with a curvilinear model and 3D ground
+truth locations are obtained by longitudinal projections on the fitted
+curve. Ego motion compensation is then removed and ground truth
+disparity is computed by projecting the camera-pedestrian distance into
+the image. Ground truth is provided in <i>Database format</i> in the file<br>
+</p><pre>&lt;SequenceFolder&gt;/LabelData/gt.db</pre>
+    
+    Specification of the <i>Database format</i>
+is given below. Timestamps (TimestampNs), median disparity
+(mediandisp), flag for valid disparities (ok3d), TTE values (turning/stopped/starting/atcurb), footpoints
+in vehicle coordinates (foot_xw/foot_xz), footpoints in image pixels
+(foot_u/foot_v) and fitted ground truth
+(fitted_xw/fitted_zw/fitted_disp) are provided as additional key-value
+pair attributes. <p></p>
+
+    
+<h2><small>Measurements</small></h2>
+
+    <p>Measurements are obtained by a state-of-the-art HOG/linSVM
+pedestrian detector, given region-of-interests supplied by an obstacle
+detection component using dense stereo data. The resulting bounding
+boxes are used to calculate a median disparity over the upper
+pedestrian body area based on the disparity maps. The measurement
+vector z = (u, d)&nbsp; is derived using the central lateral position
+of the bounding box and this median disparity value. Measurements are provided in <i>Database format</i> in the file </p><pre>&lt;SequenceFolder&gt;/LabelData/meas.db</pre>
+    
+    Specification of the <i>Database format</i>
+is given below. Median disparity (mediandisp), footpoints in vehicle
+coordinates (foot_xw/foot_xz) and footpoints in image pixels
+(foot_u/foot_v) are provided as additional key-value pair attributes. 
+    <p></p>
+
+    <hr>
+
+    <a name="camera"></a>
+    
+    <h2>Camera Parameters</h2>
+    Provided images have been rectified. Camera parameters necessary to project from 2D to 3D are described in the file:
+    <pre>Calibration/camera_parameters.txt</pre>
+    
+    <p>
+The camera is mounted inside the vehicle below the rear view mirror.
+The world coordinate system origin is below the rear axis of the
+vehicle on the ground-plane. x is pointing to the right, y is pointing
+up and z is pointing towards the driving direction. The camera is 1.2m
+above the ground and 1.9m behind the front of the vehicle. Distance of
+the camera to the rear axis is 1.8m.<br>
+</p>
+
+    
+
+
+    <hr>
+     <h2>Vehicle Data</h2>
+     Vehicle velocity and yaw-rate measurements are available in the camera cycle time from on-board sensors.
+     Measurements for each image can be found in&nbsp; 'TxtVehicle' in the sequence folders:
+    <pre>&lt;SequenceFolder&gt;/TxtVehicle/vehicle_&lt;img_idx&gt;.txt</pre>
+    <p>
+      Each file contains the vehicle velocity (m/s), the
+      yaw rate (m/s^2) and a time-stamp (milliseconds). The file name includes an index corresponding to image indices.
+    </p>
+
+
+    <hr>
+    
+    <a name="database"></a>
+    
+    <h2>Ground Truth and Measurement File Format</h2>
+    <p>Ground truth and pedestrian detector measurements are provided in the ASCII <i>Database format</i>. Specification is
+    given below.</p>
+<p>
+    
+    <!--table align=center frame="box" rules="none" border=0 cellpadding=3 bgcolor=#FFFFE0-->
+    
+      
+      </p>
+<table class="filesyntax" align="center">
+<tbody class="filesyntax"><tr>
+	<td><code>:</code></td><td width="10"><br>
+</td>
+	<td>sequence separator, initiates an image sequence entry</td>
+      </tr><tr>
+	<td><code>seq_id</code></td><td width="10"><br>
+</td>
+	<td>string identifier descriping the sequence</td>
+      </tr><tr>
+	<td><code>absolute_path</code></td><td width="10"><br>
+</td>
+	<td>path to directory containing sequence</td>
+      </tr><tr>
+	<td><code>nr_images</code></td><td width="10"><br>
+</td> 
+	<td>length of sequence, or -1 if unkown</td>
+      </tr><tr> 
+	  <td><br>
+</td>
+      </tr><tr>
+	<td><code>&nbsp;&nbsp;;</code></td><td width="10"><br>
+</td> 
+	<td>image (frame) separator, initiates an image frame entry</td>
+      </tr><tr>
+	<td><code>&nbsp;&nbsp;image_name</code></td><td width="10"><br>
+</td> 
+	<td>image file name</td>
+      </tr><tr>
+	<td><code>&nbsp;&nbsp;image_width image_height</code></td><td width="10"><br>
+</td> 
+	<td>image size</td>
+      </tr><tr>
+	<td><code>&nbsp;&nbsp;object_class nr_of_objects</code></td><td width="10"><br>
+</td> 
+	<td>default object class; number of objects, or -1 if unknown</td>
+      </tr><tr>
+	  <td><br>
+</td>
+      </tr><tr>
+	<td><code>&nbsp;&nbsp;&nbsp;&nbsp;# [object_class]</code></td><td width="10"><br>
+</td> 
+	<td>2D object separator, initiates an object entry in 2D (image) coordinates;<br>
+	    optional object class, overriding the default entry above<br>
+
+	    object class: <br>
+
+	    0=fully-visible pedestrian<br>
+ 
+	    1=bicyclist<br>
+
+	    2=motorcyclist<br>
+
+	    10=pedestrian group<br>
+
+	    255=partially visible pedestrian, bicyclist, motorcyclist<br>
+</td>
+      </tr><tr>
+	<td><code>&nbsp;&nbsp;&nbsp;&nbsp;obj_id [unique_id]</code></td><td width="10"><br>
+</td> 
+	<td>object ID to identify trajectories of the same physical object;<br>
+	    optional additional ID unique to each object entry</td>
+      </tr><tr>
+	<td><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;confidence_1 ... confidence_n&gt;</code></td><td width="10"><br>
+</td>
+	<td>a vector of up to 16 float values</td>
+      </tr><tr>
+	<td><code>&nbsp;&nbsp;&nbsp;&nbsp;min_x min_y max_x max_y</code></td><td width="10"><br>
+</td> 
+	<td>2D bounding box coordinates (integer values)</td>
+      </tr><tr>
+	<td><code>&nbsp;&nbsp;&nbsp;&nbsp;nr_contour_points</code></td><td width="10"><br>
+</td> 
+	<td>number of contour points to follow</td>
+      </tr><tr>
+	<td><code>&nbsp;&nbsp;&nbsp;&nbsp;x_1 y_1 ... x_n y_n</code></td><td width="10"><br>
+</td> 
+	<td>list of contour points</td>
+      </tr><tr>
+	<td><code>&nbsp;&nbsp;&nbsp;&nbsp;% attr_key attr_value</code></td><td width="10"><br>
+</td> 
+	<td>optional object attributes given as key-value pairs</td>
+      </tr><tr>
+	<td><code>&nbsp;&nbsp;&nbsp;&nbsp;...</code></td><td width="10"><br>
+</td> 
+	<td>(end of 2D object entry, more objects to follow)</td>
+      </tr><tr>
+	  <td><br>
+</td>
+      </tr><tr>
+	<td><code>&nbsp;&nbsp;&nbsp;&nbsp;§ [object_class]</code></td><td width="10"><br>
+</td> 
+	<td>3D object separator, initiates an object entry in 3D (world) coordinates;<br>
+	    optional object class, overriding the default entry above</td>
+      </tr><tr>
+	<td><code>&nbsp;&nbsp;&nbsp;&nbsp;obj_id [unique_id]</code></td><td width="10"><br>
+</td> 
+	<td>object ID to identify trajectories of the same physical object;<br>
+	    optional additional ID unique to each object entry</td>
+      </tr><tr>
+	<td><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;confidence_1 ... confidence_n&gt;</code></td><td width="10"><br>
+</td> 
+	<td>a vector of up to 16 float values</td>
+      </tr><tr>
+	<td><code>&nbsp;&nbsp;&nbsp;&nbsp;obj_min_x obj_min_y obj_min_z</code></td><td width="10"><br>
+</td> 
+	<td>3D bounding box coordinates (float values)</td>
+      </tr><tr>
+	<td><code>&nbsp;&nbsp;&nbsp;&nbsp;obj_max_x obj_max_y obj_max_z</code></td><td width="10"><br>
+</td> 
+	<td><br>
+</td>
+      </tr><tr>
+	<td><code>&nbsp;&nbsp;&nbsp;&nbsp;% attr_key attr_value</code></td><td width="10"><br>
+</td> 
+	<td>optional object attributes given as key-value pairs</td>
+      </tr><tr>
+	<td><code>&nbsp;&nbsp;&nbsp;&nbsp;...</code></td><td width="10"><br>
+</td> 
+	<td>(end of 3D object entry, more objects to follow)</td>
+      </tr><tr>
+	<td><code>&nbsp;&nbsp;...</code></td><td width="10"><br>
+</td> 
+	<td>(end of image frame entry, more images to follow)</td>
+      </tr><tr>
+	<td><code>...</code></td><td width="10"><br>
+</td> 
+	<td>(end of image sequence entry, more sequences to follow)</td></tr></tbody>
+</table>
+<br>
+<br>
+<hr>
+    
+    <a name="benchmarking"></a>
+    <h2>Benchmarking Procedure</h2>
+    <p>
+Authors who wish to evaluate pedestrian path prediction on this dataset
+are encouraged to follow the benchmarking procedure and criteria as
+detailed in the publication given above. Evaluation methodology and
+objective function for process noise parameter optimization are
+provided as Matlab functions in the directory<br>
+</p>
+<pre>evaluation<br></pre>
+<p>See <br>
+</p>
+<pre>evaluation/example.m</pre>
+
+<p>for details on how to use the functions.</p>
+<p>Note that this software is provided "as is" without warranty of any kind. 
+    </p>
+
+    <p>
+      The original authors would like to hear about other publications that
+      make use of the benchmark data set in order to include corresponding 
+      references on the benchmark website.
+    </p>
+
+
+  <hr>
+    
+    <a name="parser"></a>
+    <h2>Ground Truth Parser (Matlab)</h2>
+    <p>
+      For convenience, a Matlab parser for the <i>Database format</i> is provided in the directory
+      </p><pre>evaluation/DBFileParser</pre> See<br>
+<pre>evaluation/DBFileParser/example.m</pre>
+    <p></p>
+    <p> for details on how
+    to interpret the <i>Database format.</i></p>
+<p>
+      Note that this software is provided "as is" without warranty of any kind.
+    </p>
+
+
+
+  <hr>
+    
+    <a name="contact"></a>
+    <h2>Contact</h2>
+    <p>
+      Please direct questions regarding the dataset and benchmarking procedure to <a href="http://www.gavrila.net" target="_blank">Prof. Dr. Dariu Gavrila</a><a>
+    </a></p>
+<a>  </a></body></html>
