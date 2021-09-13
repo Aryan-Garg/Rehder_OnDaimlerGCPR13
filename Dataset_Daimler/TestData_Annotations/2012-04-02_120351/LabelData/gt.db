@@ -1,0 +1,3483 @@
+:
+2012-04-02_120351_BendingIn
+
+206
+;
+img_000000094_c0.pgm
+1176 640
+0 1
+# 0
+1 0
+0.00000
+1025 113 1208 554
+0
+% ok3d 0
+;
+img_000000095_c0.pgm
+1176 640
+0 1
+# 0
+1 1
+0.00000
+1022 118 1201 551
+0
+% ok3d 0
+;
+img_000000096_c0.pgm
+1176 640
+0 1
+# 0
+1 2
+0.00000
+1018 120 1195 547
+0
+% ok3d 0
+;
+img_000000097_c0.pgm
+1176 640
+0 1
+# 0
+1 3
+0.00000
+1012 121 1179 520
+0
+% ok3d 0
+;
+img_000000098_c0.pgm
+1176 640
+0 1
+# 0
+1 4
+0.00000
+1001 122 1161 518
+0
+% TimestampNs 1.333361016744273e+18
+% mediandisp 50.7567
+% ok3d 1
+% turning 38
+% foot_xw 2.2276
+% foot_zw 7.2436
+% foot_u 1081
+% foot_v 518
+% fitted_valid 1
+% fitted_xw 2.1935
+% fitted_zw 7.2488
+% fitted_disp 50.7035
+;
+img_000000099_c0.pgm
+1176 640
+0 1
+# 0
+1 5
+0.00000
+998 123 1154 517
+0
+% TimestampNs 1.333361016805116e+18
+% mediandisp 49.9952
+% ok3d 1
+% turning 37
+% foot_xw 2.2378
+% foot_zw 7.3261
+% foot_u 1076
+% foot_v 517
+% fitted_valid 1
+% fitted_xw 2.212
+% fitted_zw 7.3474
+% fitted_disp 49.7986
+;
+img_000000100_c0.pgm
+1176 640
+0 1
+# 0
+1 6
+0.00000
+993 128 1149 516
+0
+% TimestampNs 1.333361016866079e+18
+% mediandisp 49.125
+% ok3d 1
+% turning 36
+% foot_xw 2.2531
+% foot_zw 7.4236
+% foot_u 1071
+% foot_v 516
+% fitted_valid 1
+% fitted_xw 2.2305
+% fitted_zw 7.4461
+% fitted_disp 48.9253
+;
+img_000000101_c0.pgm
+1176 640
+0 1
+# 0
+1 7
+0.00000
+986 130 1146 513
+0
+% TimestampNs 1.333361016924841e+18
+% mediandisp 48.2825
+% ok3d 1
+% turning 35
+% foot_xw 2.2677
+% foot_zw 7.5211
+% foot_u 1066
+% foot_v 513
+% fitted_valid 1
+% fitted_xw 2.2481
+% fitted_zw 7.5411
+% fitted_disp 48.1108
+;
+img_000000102_c0.pgm
+1176 640
+0 1
+# 0
+1 8
+0.00000
+974 131 1132 507
+0
+% TimestampNs 1.333361017046157e+18
+% mediandisp 46.5
+% ok3d 1
+% turning 34
+% foot_xw 2.2889
+% foot_zw 7.7389
+% foot_u 1053
+% foot_v 507
+% fitted_valid 1
+% fitted_xw 2.2841
+% fitted_zw 7.737
+% fitted_disp 46.5141
+;
+img_000000103_c0.pgm
+1176 640
+0 1
+# 0
+1 9
+0.00000
+970 135 1124 498
+0
+% TimestampNs 1.333361017106801e+18
+% mediandisp 45.6758
+% ok3d 1
+% turning 33
+% foot_xw 2.2993
+% foot_zw 7.8445
+% foot_u 1047
+% foot_v 498
+% fitted_valid 1
+% fitted_xw 2.3018
+% fitted_zw 7.8348
+% fitted_disp 45.75
+;
+img_000000104_c0.pgm
+1176 640
+0 1
+# 0
+1 10
+0.00000
+966 134 1122 488
+0
+% TimestampNs 1.333361017166885e+18
+% mediandisp 45
+% ok3d 1
+% turning 32
+% foot_xw 2.3176
+% foot_zw 7.9337
+% foot_u 1044
+% foot_v 488
+% fitted_valid 1
+% fitted_xw 2.3192
+% fitted_zw 7.9315
+% fitted_disp 45.0162
+;
+img_000000105_c0.pgm
+1176 640
+0 1
+# 0
+1 11
+0.00000
+963 134 1117 486
+0
+% TimestampNs 1.33336101722782e+18
+% mediandisp 44.2917
+% ok3d 1
+% turning 31
+% foot_xw 2.333
+% foot_zw 8.0313
+% foot_u 1040
+% foot_v 486
+% fitted_valid 1
+% fitted_xw 2.3367
+% fitted_zw 8.0295
+% fitted_disp 44.3047
+;
+img_000000106_c0.pgm
+1176 640
+0 1
+# 0
+1 12
+0.00000
+957 136 1109 484
+0
+% TimestampNs 1.33336101734837e+18
+% mediandisp 43.0082
+% ok3d 1
+% turning 30
+% foot_xw 2.3635
+% foot_zw 8.2165
+% foot_u 1033
+% foot_v 484
+% fitted_valid 1
+% fitted_xw 2.3708
+% fitted_zw 8.2231
+% fitted_disp 42.9645
+;
+img_000000107_c0.pgm
+1176 640
+0 1
+# 0
+1 13
+0.00000
+954 137 1104 483
+0
+% TimestampNs 1.333361017407122e+18
+% mediandisp 42.3131
+% ok3d 1
+% turning 29
+% foot_xw 2.3797
+% foot_zw 8.3216
+% foot_u 1029
+% foot_v 483
+% fitted_valid 1
+% fitted_xw 2.3871
+% fitted_zw 8.3171
+% fitted_disp 42.3426
+;
+img_000000108_c0.pgm
+1176 640
+0 1
+# 0
+1 14
+0.00000
+957 148 1097 481
+0
+% TimestampNs 1.333361017467845e+18
+% mediandisp 41.75
+% ok3d 1
+% turning 28
+% foot_xw 2.3998
+% foot_zw 8.4091
+% foot_u 1027
+% foot_v 481
+% fitted_valid 1
+% fitted_xw 2.4037
+% fitted_zw 8.4142
+% fitted_disp 41.7178
+;
+img_000000109_c0.pgm
+1176 640
+0 1
+# 0
+1 15
+0.00000
+954 148 1094 479
+0
+% TimestampNs 1.333361017528639e+18
+% mediandisp 41
+% ok3d 1
+% turning 27
+% foot_xw 2.4256
+% foot_zw 8.5295
+% foot_u 1024
+% foot_v 479
+% fitted_valid 1
+% fitted_xw 2.4202
+% fitted_zw 8.5112
+% fitted_disp 41.1126
+;
+img_000000110_c0.pgm
+1176 640
+0 1
+# 0
+1 16
+0.00000
+952 148 1082 462
+0
+% TimestampNs 1.333361017649132e+18
+% mediandisp 39.9167
+% ok3d 1
+% turning 26
+% foot_xw 2.4498
+% foot_zw 8.7091
+% foot_u 1017
+% foot_v 462
+% fitted_valid 1
+% fitted_xw 2.4522
+% fitted_zw 8.703
+% fitted_disp 39.9521
+;
+img_000000111_c0.pgm
+1176 640
+0 1
+# 0
+1 17
+0.00000
+951 149 1079 461
+0
+% TimestampNs 1.333361017710113e+18
+% mediandisp 39.3911
+% ok3d 1
+% turning 25
+% foot_xw 2.4699
+% foot_zw 8.8009
+% foot_u 1015
+% foot_v 461
+% fitted_valid 1
+% fitted_xw 2.4679
+% fitted_zw 8.7997
+% fitted_disp 39.398
+;
+img_000000112_c0.pgm
+1176 640
+0 1
+# 0
+1 18
+0.00000
+948 150 1074 458
+0
+% TimestampNs 1.333361017768522e+18
+% mediandisp 39
+% ok3d 1
+% turning 24
+% foot_xw 2.471
+% foot_zw 8.8704
+% foot_u 1011
+% foot_v 458
+% fitted_valid 1
+% fitted_xw 2.4827
+% fitted_zw 8.8921
+% fitted_disp 38.8805
+;
+img_000000113_c0.pgm
+1176 640
+0 1
+# 0
+1 19
+0.00000
+945 151 1071 456
+0
+% TimestampNs 1.333361017828878e+18
+% mediandisp 38.5628
+% ok3d 1
+% turning 23
+% foot_xw 2.4806
+% foot_zw 8.95
+% foot_u 1008
+% foot_v 456
+% fitted_valid 1
+% fitted_xw 2.4976
+% fitted_zw 8.9873
+% fitted_disp 38.3621
+;
+img_000000114_c0.pgm
+1176 640
+0 1
+# 0
+1 20
+0.00000
+934 151 1066 452
+0
+% TimestampNs 1.333361017949538e+18
+% mediandisp 37.3949
+% ok3d 1
+% turning 22
+% foot_xw 2.5076
+% foot_zw 9.1722
+% foot_u 1000
+% foot_v 452
+% fitted_valid 1
+% fitted_xw 2.5266
+% fitted_zw 9.1773
+% fitted_disp 37.3699
+;
+img_000000115_c0.pgm
+1176 640
+0 1
+# 0
+1 21
+0.00000
+930 151 1062 450
+0
+% TimestampNs 1.333361018010065e+18
+% mediandisp 36.8125
+% ok3d 1
+% turning 21
+% foot_xw 2.5216
+% foot_zw 9.2882
+% foot_u 996
+% foot_v 450
+% fitted_valid 1
+% fitted_xw 2.5404
+% fitted_zw 9.272
+% fitted_disp 36.8939
+;
+img_000000116_c0.pgm
+1176 640
+0 1
+# 0
+1 22
+0.00000
+929 151 1053 444
+0
+% TimestampNs 1.333361018070167e+18
+% mediandisp 36.25
+% ok3d 1
+% turning 20
+% foot_xw 2.5287
+% foot_zw 9.403
+% foot_u 991
+% foot_v 444
+% fitted_valid 1
+% fitted_xw 2.5536
+% fitted_zw 9.3658
+% fitted_disp 36.431
+;
+img_000000117_c0.pgm
+1176 640
+0 1
+# 0
+1 23
+0.00000
+926 150 1050 444
+0
+% TimestampNs 1.333361018130826e+18
+% mediandisp 35.9
+% ok3d 1
+% turning 19
+% foot_xw 2.5339
+% foot_zw 9.4769
+% foot_u 988
+% foot_v 444
+% fitted_valid 1
+% fitted_xw 2.5664
+% fitted_zw 9.4602
+% fitted_disp 35.9808
+;
+img_000000118_c0.pgm
+1176 640
+0 1
+# 0
+1 24
+0.00000
+923 150 1039 439
+0
+% TimestampNs 1.333361018251892e+18
+% mediandisp 35.1407
+% ok3d 1
+% turning 18
+% foot_xw 2.5424
+% foot_zw 9.6414
+% foot_u 981
+% foot_v 439
+% fitted_valid 1
+% fitted_xw 2.5908
+% fitted_zw 9.6479
+% fitted_disp 35.1139
+;
+img_000000119_c0.pgm
+1176 640
+0 1
+# 0
+1 25
+0.00000
+920 151 1038 436
+0
+% TimestampNs 1.333361018312785e+18
+% mediandisp 34.7825
+% ok3d 1
+% turning 17
+% foot_xw 2.5548
+% foot_zw 9.7214
+% foot_u 979
+% foot_v 436
+% fitted_valid 1
+% fitted_xw 2.6019
+% fitted_zw 9.7416
+% fitted_disp 34.6958
+;
+img_000000120_c0.pgm
+1176 640
+0 1
+# 0
+1 26
+0.00000
+919 152 1035 435
+0
+% TimestampNs 1.333361018371395e+18
+% mediandisp 34.3038
+% ok3d 1
+% turning 16
+% foot_xw 2.5761
+% foot_zw 9.8316
+% foot_u 977
+% foot_v 435
+% fitted_valid 1
+% fitted_xw 2.6118
+% fitted_zw 9.8315
+% fitted_disp 34.3062
+;
+img_000000121_c0.pgm
+1176 640
+0 1
+# 0
+1 27
+0.00000
+923 165 1027 432
+0
+% TimestampNs 1.33336101843244e+18
+% mediandisp 33.8636
+% ok3d 1
+% turning 15
+% foot_xw 2.5951
+% foot_zw 9.9353
+% foot_u 975
+% foot_v 432
+% fitted_valid 1
+% fitted_xw 2.6213
+% fitted_zw 9.9248
+% fitted_disp 33.9093
+;
+img_000000122_c0.pgm
+1176 640
+0 1
+# 0
+1 28
+0.00000
+922 165 1026 430
+0
+% TimestampNs 1.333361018493198e+18
+% mediandisp 33.4375
+% ok3d 1
+% turning 14
+% foot_xw 2.6202
+% foot_zw 10.0386
+% foot_u 974
+% foot_v 430
+% fitted_valid 1
+% fitted_xw 2.63
+% fitted_zw 10.0172
+% fitted_disp 33.5255
+;
+img_000000123_c0.pgm
+1176 640
+0 1
+# 0
+1 29
+0.00000
+920 163 1014 417
+0
+% TimestampNs 1.333361018614349e+18
+% mediandisp 32.8
+% ok3d 1
+% turning 13
+% foot_xw 2.6221
+% foot_zw 10.1957
+% foot_u 967
+% foot_v 417
+% fitted_valid 1
+% fitted_xw 2.6454
+% fitted_zw 10.2008
+% fitted_disp 32.781
+;
+img_000000124_c0.pgm
+1176 640
+0 1
+# 0
+1 30
+0.00000
+915 161 1011 417
+0
+% TimestampNs 1.333361018673386e+18
+% mediandisp 32.5312
+% ok3d 1
+% turning 12
+% foot_xw 2.6158
+% foot_zw 10.2647
+% foot_u 963
+% foot_v 417
+% fitted_valid 1
+% fitted_xw 2.6511
+% fitted_zw 10.2894
+% fitted_disp 32.4375
+;
+img_000000125_c0.pgm
+1176 640
+0 1
+# 0
+1 31
+0.00000
+910 166 1008 414
+0
+% TimestampNs 1.333361018733856e+18
+% mediandisp 32.2115
+% ok3d 1
+% turning 11
+% foot_xw 2.6133
+% foot_zw 10.3479
+% foot_u 959
+% foot_v 414
+% fitted_valid 1
+% fitted_xw 2.6559
+% fitted_zw 10.3798
+% fitted_disp 32.0926
+;
+img_000000126_c0.pgm
+1176 640
+0 1
+# 0
+1 32
+0.00000
+910 170 1008 413
+0
+% TimestampNs 1.333361018794497e+18
+% mediandisp 31.9118
+% ok3d 1
+% turning 10
+% foot_xw 2.6368
+% foot_zw 10.428
+% foot_u 959
+% foot_v 413
+% fitted_valid 1
+% fitted_xw 2.6595
+% fitted_zw 10.47
+% fitted_disp 31.757
+;
+img_000000127_c0.pgm
+1176 640
+0 1
+# 0
+1 33
+0.00000
+899 173 999 412
+0
+% TimestampNs 1.333361018854463e+18
+% mediandisp 31.5653
+% ok3d 1
+% turning 9
+% foot_xw 2.5948
+% foot_zw 10.5216
+% foot_u 949
+% foot_v 412
+% fitted_valid 1
+% fitted_xw 2.6619
+% fitted_zw 10.5586
+% fitted_disp 31.4339
+;
+img_000000128_c0.pgm
+1176 640
+0 1
+# 0
+1 34
+0.00000
+893 175 989 410
+0
+% TimestampNs 1.333361018975256e+18
+% mediandisp 30.625
+% ok3d 1
+% turning 8
+% foot_xw 2.6136
+% foot_zw 10.7884
+% foot_u 941
+% foot_v 410
+% fitted_valid 1
+% fitted_xw 2.6641
+% fitted_zw 10.7363
+% fitted_disp 30.8067
+;
+img_000000129_c0.pgm
+1176 640
+0 1
+# 0
+1 35
+0.00000
+894 175 986 408
+0
+% TimestampNs 1.333361019035677e+18
+% mediandisp 30.2778
+% ok3d 1
+% turning 7
+% foot_xw 2.6351
+% foot_zw 10.8909
+% foot_u 940
+% foot_v 408
+% fitted_valid 1
+% fitted_xw 2.6627
+% fitted_zw 10.8241
+% fitted_disp 30.5047
+;
+img_000000130_c0.pgm
+1176 640
+0 1
+# 0
+1 36
+0.00000
+889 174 981 408
+0
+% TimestampNs 1.333361019096018e+18
+% mediandisp 30
+% ok3d 1
+% turning 6
+% foot_xw 2.6217
+% foot_zw 10.9747
+% foot_u 935
+% foot_v 408
+% fitted_valid 1
+% fitted_xw 2.6599
+% fitted_zw 10.9113
+% fitted_disp 30.2118
+;
+img_000000131_c0.pgm
+1176 640
+0 1
+# 0
+1 37
+0.00000
+891 175 979 407
+0
+% TimestampNs 1.333361019156612e+18
+% mediandisp 29.8333
+% ok3d 1
+% turning 5
+% foot_xw 2.6358
+% foot_zw 11.0257
+% foot_u 935
+% foot_v 407
+% fitted_valid 1
+% fitted_xw 2.6555
+% fitted_zw 10.9982
+% fitted_disp 29.9239
+;
+img_000000132_c0.pgm
+1176 640
+0 1
+# 0
+1 38
+0.00000
+888 177 972 405
+0
+% TimestampNs 1.333361019277169e+18
+% mediandisp 29.25
+% ok3d 1
+% turning 4
+% foot_xw 2.6485
+% foot_zw 11.2089
+% foot_u 930
+% foot_v 405
+% fitted_valid 1
+% fitted_xw 2.6437
+% fitted_zw 11.1702
+% fitted_disp 29.3715
+;
+img_000000133_c0.pgm
+1176 640
+0 1
+# 0
+1 39
+0.00000
+887 179 971 405
+0
+% TimestampNs 1.33336101933788e+18
+% mediandisp 29
+% ok3d 1
+% turning 3
+% foot_xw 2.6628
+% foot_zw 11.2899
+% foot_u 929
+% foot_v 405
+% fitted_valid 1
+% fitted_xw 2.6346
+% fitted_zw 11.2555
+% fitted_disp 29.105
+;
+img_000000134_c0.pgm
+1176 640
+0 1
+# 0
+1 40
+0.00000
+885 179 969 404
+0
+% TimestampNs 1.333361019396786e+18
+% mediandisp 28.7222
+% ok3d 1
+% turning 2
+% foot_xw 2.6722
+% foot_zw 11.3813
+% foot_u 927
+% foot_v 404
+% fitted_valid 1
+% fitted_xw 2.6241
+% fitted_zw 11.3379
+% fitted_disp 28.8521
+;
+img_000000135_c0.pgm
+1176 640
+0 1
+# 0
+1 41
+0.00000
+882 179 966 399
+0
+% TimestampNs 1.333361019457515e+18
+% mediandisp 28.3571
+% ok3d 1
+% turning 1
+% foot_xw 2.6819
+% foot_zw 11.5033
+% foot_u 924
+% foot_v 399
+% fitted_valid 1
+% fitted_xw 2.6117
+% fitted_zw 11.4222
+% fitted_disp 28.5951
+;
+img_000000136_c0.pgm
+1176 640
+0 1
+# 0
+1 42
+0.00000
+873 180 955 392
+0
+% TimestampNs 1.333361019578379e+18
+% mediandisp 28
+% ok3d 1
+% turning 0
+% foot_xw 2.6361
+% foot_zw 11.6246
+% foot_u 914
+% foot_v 392
+% fitted_valid 1
+% fitted_xw 2.5833
+% fitted_zw 11.589
+% fitted_disp 28.1006
+;
+img_000000137_c0.pgm
+1176 640
+0 1
+# 0
+1 43
+0.00000
+870 181 948 391
+0
+% TimestampNs 1.333361019638138e+18
+% mediandisp 27.8208
+% ok3d 1
+% turning -1
+% foot_xw 2.6128
+% foot_zw 11.6872
+% foot_u 909
+% foot_v 391
+% fitted_valid 1
+% fitted_xw 2.5659
+% fitted_zw 11.6703
+% fitted_disp 27.867
+;
+img_000000138_c0.pgm
+1176 640
+0 1
+# 0
+1 44
+0.00000
+868 182 946 392
+0
+% TimestampNs 1.333361019698693e+18
+% mediandisp 27.6736
+% ok3d 1
+% turning -2
+% foot_xw 2.6102
+% foot_zw 11.7398
+% foot_u 907
+% foot_v 392
+% fitted_valid 1
+% fitted_xw 2.5463
+% fitted_zw 11.7523
+% fitted_disp 27.6364
+;
+img_000000139_c0.pgm
+1176 640
+0 1
+# 0
+1 45
+0.00000
+861 184 939 391
+0
+% TimestampNs 1.333361019759045e+18
+% mediandisp 27.5
+% ok3d 1
+% turning -3
+% foot_xw 2.5699
+% foot_zw 11.8016
+% foot_u 900
+% foot_v 391
+% fitted_valid 1
+% fitted_xw 2.525
+% fitted_zw 11.8336
+% fitted_disp 27.4105
+;
+img_000000140_c0.pgm
+1176 640
+0 1
+# 0
+1 46
+0.00000
+851 186 935 389
+0
+% TimestampNs 1.333361019878427e+18
+% mediandisp 27
+% ok3d 1
+% turning -4
+% foot_xw 2.5584
+% foot_zw 11.9857
+% foot_u 893
+% foot_v 389
+% fitted_valid 1
+% fitted_xw 2.4791
+% fitted_zw 11.9935
+% fitted_disp 26.977
+;
+img_000000141_c0.pgm
+1176 640
+0 1
+# 0
+1 47
+0.00000
+847 186 923 387
+0
+% TimestampNs 1.333361019939032e+18
+% mediandisp 26.7857
+% ok3d 1
+% turning -5
+% foot_xw 2.5123
+% foot_zw 12.066
+% foot_u 885
+% foot_v 387
+% fitted_valid 1
+% fitted_xw 2.4522
+% fitted_zw 12.0737
+% fitted_disp 26.7636
+;
+img_000000142_c0.pgm
+1176 640
+0 1
+# 0
+1 48
+0.00000
+848 186 916 387
+0
+% TimestampNs 1.333361019999848e+18
+% mediandisp 26.5625
+% ok3d 1
+% turning -6
+% foot_xw 2.5076
+% foot_zw 12.152
+% foot_u 882
+% foot_v 387
+% fitted_valid 1
+% fitted_xw 2.4232
+% fitted_zw 12.1539
+% fitted_disp 26.555
+;
+img_000000143_c0.pgm
+1176 640
+0 1
+# 0
+1 49
+0.00000
+843 187 907 388
+0
+% TimestampNs 1.333361020060212e+18
+% mediandisp 26.25
+% ok3d 1
+% turning -7
+% foot_xw 2.4774
+% foot_zw 12.2748
+% foot_u 875
+% foot_v 388
+% fitted_valid 1
+% fitted_xw 2.3926
+% fitted_zw 12.2331
+% fitted_disp 26.3528
+;
+img_000000144_c0.pgm
+1176 640
+0 1
+# 0
+1 50
+0.00000
+823 192 907 386
+0
+% TimestampNs 1.333361020181642e+18
+% mediandisp 25.947
+% ok3d 1
+% turning -8
+% foot_xw 2.4202
+% foot_zw 12.3956
+% foot_u 865
+% foot_v 386
+% fitted_valid 1
+% fitted_xw 2.3274
+% fitted_zw 12.3919
+% fitted_disp 25.9536
+;
+img_000000145_c0.pgm
+1176 640
+0 1
+# 0
+1 51
+0.00000
+814 196 904 387
+0
+% TimestampNs 1.333361020242207e+18
+% mediandisp 25.726
+% ok3d 1
+% turning -9
+% foot_xw 2.3887
+% foot_zw 12.4863
+% foot_u 859
+% foot_v 387
+% fitted_valid 1
+% fitted_xw 2.2911
+% fitted_zw 12.4703
+% fitted_disp 25.7619
+;
+img_000000146_c0.pgm
+1176 640
+0 1
+# 0
+1 52
+0.00000
+805 199 899 386
+0
+% TimestampNs 1.333361020300434e+18
+% mediandisp 25.4167
+% ok3d 1
+% turning -10
+% foot_xw 2.3558
+% foot_zw 12.6154
+% foot_u 852
+% foot_v 386
+% fitted_valid 1
+% fitted_xw 2.2545
+% fitted_zw 12.5455
+% fitted_disp 25.58
+;
+img_000000147_c0.pgm
+1176 640
+0 1
+# 0
+1 53
+0.00000
+803 199 881 383
+0
+% TimestampNs 1.333361020361842e+18
+% mediandisp 25.303
+% ok3d 1
+% turning -11
+% foot_xw 2.2789
+% foot_zw 12.6622
+% foot_u 842
+% foot_v 383
+% fitted_valid 1
+% fitted_xw 2.2143
+% fitted_zw 12.6246
+% fitted_disp 25.3896
+;
+img_000000148_c0.pgm
+1176 640
+0 1
+# 0
+1 54
+0.00000
+795 197 857 381
+0
+% TimestampNs 1.33336102048311e+18
+% mediandisp 25.25
+% ok3d 1
+% turning -12
+% foot_xw 2.144
+% foot_zw 12.6829
+% foot_u 826
+% foot_v 381
+% fitted_valid 1
+% fitted_xw 2.1315
+% fitted_zw 12.7803
+% fitted_disp 25.0244
+;
+img_000000149_c0.pgm
+1176 640
+0 1
+# 0
+1 55
+0.00000
+786 196 850 382
+0
+% TimestampNs 1.333361020541528e+18
+% mediandisp 25.1
+% ok3d 1
+% turning -13
+% foot_xw 2.086
+% foot_zw 12.7473
+% foot_u 818
+% foot_v 382
+% fitted_valid 1
+% fitted_xw 2.0883
+% fitted_zw 12.8549
+% fitted_disp 24.8546
+;
+img_000000150_c0.pgm
+1176 640
+0 1
+# 0
+1 56
+0.00000
+767 196 855 383
+0
+% TimestampNs 1.333361020603021e+18
+% mediandisp 24.875
+% ok3d 1
+% turning -14
+% foot_xw 2.0419
+% foot_zw 12.8459
+% foot_u 811
+% foot_v 383
+% fitted_valid 1
+% fitted_xw 2.0415
+% fitted_zw 12.9333
+% fitted_disp 24.6787
+;
+img_000000151_c0.pgm
+1176 640
+0 1
+# 0
+1 57
+0.00000
+758 199 856 382
+0
+% TimestampNs 1.333361020663911e+18
+% mediandisp 24.5
+% ok3d 1
+% turning -15
+% foot_xw 2.0355
+% foot_zw 13.0143
+% foot_u 807
+% foot_v 382
+% fitted_valid 1
+% fitted_xw 1.9937
+% fitted_zw 13.0108
+% fitted_disp 24.5065
+;
+img_000000152_c0.pgm
+1176 640
+0 1
+# 0
+1 58
+0.00000
+748 199 846 382
+0
+% TimestampNs 1.333361020724444e+18
+% mediandisp 24.2043
+% ok3d 1
+% turning -16
+% foot_xw 1.9681
+% foot_zw 13.1502
+% foot_u 797
+% foot_v 382
+% fitted_valid 1
+% fitted_xw 1.9448
+% fitted_zw 13.0878
+% fitted_disp 24.3383
+;
+img_000000153_c0.pgm
+1176 640
+0 1
+# 0
+1 59
+0.00000
+737 199 817 377
+0
+% TimestampNs 1.33336102084364e+18
+% mediandisp 23.9318
+% ok3d 1
+% turning -17
+% foot_xw 1.8053
+% foot_zw 13.276
+% foot_u 777
+% foot_v 377
+% fitted_valid 1
+% fitted_xw 1.846
+% fitted_zw 13.2392
+% fitted_disp 24.0103
+;
+img_000000154_c0.pgm
+1176 640
+0 1
+# 0
+1 60
+0.00000
+738 196 800 377
+0
+% TimestampNs 1.333361020905243e+18
+% mediandisp 23.9
+% ok3d 1
+% turning -18
+% foot_xw 1.7338
+% foot_zw 13.2904
+% foot_u 769
+% foot_v 377
+% fitted_valid 1
+% fitted_xw 1.7925
+% fitted_zw 13.3173
+% fitted_disp 23.8455
+;
+img_000000155_c0.pgm
+1176 640
+0 1
+# 0
+1 61
+0.00000
+727 197 795 375
+0
+% TimestampNs 1.333361020965702e+18
+% mediandisp 23.7121
+% ok3d 1
+% turning -19
+% foot_xw 1.6724
+% foot_zw 13.3801
+% foot_u 761
+% foot_v 375
+% fitted_valid 1
+% fitted_xw 1.7389
+% fitted_zw 13.3939
+% fitted_disp 23.6852
+;
+img_000000156_c0.pgm
+1176 640
+0 1
+# 0
+1 62
+0.00000
+718 198 792 374
+0
+% TimestampNs 1.333361021023843e+18
+% mediandisp 23.6131
+% ok3d 1
+% turning -20
+% foot_xw 1.623
+% foot_zw 13.4277
+% foot_u 755
+% foot_v 374
+% fitted_valid 1
+% fitted_xw 1.6864
+% fitted_zw 13.4677
+% fitted_disp 23.5332
+;
+img_000000157_c0.pgm
+1176 640
+0 1
+# 0
+1 63
+0.00000
+702 199 780 373
+0
+% TimestampNs 1.333361021144773e+18
+% mediandisp 23.1745
+% ok3d 1
+% turning -21
+% foot_xw 1.5187
+% foot_zw 13.6459
+% foot_u 741
+% foot_v 373
+% fitted_valid 1
+% fitted_xw 1.5187
+% fitted_zw 13.6646
+% fitted_disp 23.138
+;
+img_000000158_c0.pgm
+1176 640
+0 1
+# 0
+1 64
+0.00000
+693 201 775 373
+0
+% TimestampNs 1.333361021205214e+18
+% mediandisp 23
+% ok3d 1
+% turning -22
+% foot_xw 1.4624
+% foot_zw 13.7351
+% foot_u 734
+% foot_v 373
+% fitted_valid 1
+% fitted_xw 1.4624
+% fitted_zw 13.749
+% fitted_disp 22.9731
+;
+img_000000159_c0.pgm
+1176 640
+0 1
+# 0
+1 65
+0.00000
+690 199 764 371
+0
+% TimestampNs 1.333361021265774e+18
+% mediandisp 22.9444
+% ok3d 1
+% turning -23
+% foot_xw 1.3985
+% foot_zw 13.7626
+% foot_u 727
+% foot_v 371
+% fitted_valid 1
+% fitted_xw 1.3985
+% fitted_zw 13.7973
+% fitted_disp 22.8778
+;
+img_000000160_c0.pgm
+1176 640
+0 1
+# 0
+1 66
+0.00000
+691 200 753 370
+0
+% TimestampNs 1.333361021326064e+18
+% mediandisp 22.8619
+% ok3d 1
+% turning -24
+% foot_xw 1.355
+% foot_zw 13.805
+% foot_u 722
+% foot_v 370
+% fitted_valid 1
+% fitted_xw 1.355
+% fitted_zw 13.8454
+% fitted_disp 22.7849
+;
+img_000000161_c0.pgm
+1176 640
+0 1
+# 0
+1 67
+0.00000
+689 197 743 366
+0
+% TimestampNs 1.333361021386506e+18
+% mediandisp 22.6538
+% ok3d 1
+% turning -25
+% foot_xw 1.3081
+% foot_zw 13.9135
+% foot_u 716
+% foot_v 366
+% fitted_valid 1
+% fitted_xw 1.3081
+% fitted_zw 13.937
+% fitted_disp 22.6096
+;
+img_000000162_c0.pgm
+1176 640
+0 1
+# 0
+1 68
+0.00000
+671 199 735 367
+0
+% TimestampNs 1.333361021507757e+18
+% mediandisp 22.4444
+% ok3d 1
+% turning -26
+% foot_xw 1.1918
+% foot_zw 14.0253
+% foot_u 703
+% foot_v 367
+% fitted_valid 1
+% fitted_xw 1.1918
+% fitted_zw 14.0641
+% fitted_disp 22.373
+;
+img_000000163_c0.pgm
+1176 640
+0 1
+# 0
+1 69
+0.00000
+659 201 731 366
+0
+% TimestampNs 1.333361021566949e+18
+% mediandisp 22.2877
+% ok3d 1
+% turning -27
+% foot_xw 1.1204
+% foot_zw 14.1101
+% foot_u 695
+% foot_v 366
+% fitted_valid 1
+% fitted_xw 1.1204
+% fitted_zw 14.1522
+% fitted_disp 22.2113
+;
+img_000000164_c0.pgm
+1176 640
+0 1
+# 0
+1 70
+0.00000
+651 201 725 367
+0
+% TimestampNs 1.333361021627608e+18
+% mediandisp 22.1667
+% ok3d 1
+% turning -28
+% foot_xw 1.0563
+% foot_zw 14.1767
+% foot_u 688
+% foot_v 367
+% fitted_valid 1
+% fitted_xw 1.0563
+% fitted_zw 14.2251
+% fitted_disp 22.08
+;
+img_000000165_c0.pgm
+1176 640
+0 1
+# 0
+1 71
+0.00000
+647 202 717 366
+0
+% TimestampNs 1.33336102168802e+18
+% mediandisp 22
+% ok3d 1
+% turning -29
+% foot_xw 1.0035
+% foot_zw 14.2695
+% foot_u 682
+% foot_v 366
+% fitted_valid 1
+% fitted_xw 1.0035
+% fitted_zw 14.3091
+% fitted_disp 21.9301
+;
+img_000000166_c0.pgm
+1176 640
+0 1
+# 0
+1 72
+0.00000
+637 197 697 363
+0
+% TimestampNs 1.33336102180808e+18
+% mediandisp 21.7105
+% ok3d 1
+% turning -30
+% foot_xw 0.8633
+% foot_zw 14.4331
+% foot_u 667
+% foot_v 363
+% fitted_valid 1
+% fitted_xw 0.8633
+% fitted_zw 14.4798
+% fitted_disp 21.6303
+;
+img_000000167_c0.pgm
+1176 640
+0 1
+# 0
+1 73
+0.00000
+632 198 690 362
+0
+% TimestampNs 1.333361021868577e+18
+% mediandisp 21.625
+% ok3d 1
+% turning -31
+% foot_xw 0.8052
+% foot_zw 14.4821
+% foot_u 661
+% foot_v 362
+% fitted_valid 1
+% fitted_xw 0.8052
+% fitted_zw 14.5387
+% fitted_disp 21.5286
+;
+img_000000168_c0.pgm
+1176 640
+0 1
+# 0
+1 74
+0.00000
+626 200 688 363
+0
+% TimestampNs 1.333361021929332e+18
+% mediandisp 21.3182
+% ok3d 1
+% turning -32
+% foot_xw 0.77389
+% foot_zw 14.6644
+% foot_u 657
+% foot_v 363
+% fitted_valid 1
+% fitted_xw 0.77389
+% fitted_zw 14.6687
+% fitted_disp 21.311
+;
+img_000000169_c0.pgm
+1176 640
+0 1
+# 0
+1 75
+0.00000
+618 202 684 362
+0
+% TimestampNs 1.333361021989743e+18
+% mediandisp 21.2083
+% ok3d 1
+% turning -33
+% foot_xw 0.71505
+% foot_zw 14.73
+% foot_u 651
+% foot_v 362
+% fitted_valid 1
+% fitted_xw 0.71505
+% fitted_zw 14.7386
+% fitted_disp 21.1943
+;
+img_000000170_c0.pgm
+1176 640
+0 1
+# 0
+1 76
+0.00000
+613 204 677 361
+0
+% TimestampNs 1.333361022050503e+18
+% mediandisp 21.0714
+% ok3d 1
+% turning -34
+% foot_xw 0.6563
+% foot_zw 14.813
+% foot_u 645
+% foot_v 361
+% fitted_valid 1
+% fitted_xw 0.6563
+% fitted_zw 14.8193
+% fitted_disp 21.0612
+;
+img_000000171_c0.pgm
+1176 640
+0 1
+# 0
+1 77
+0.00000
+605 207 665 355
+0
+% TimestampNs 1.333361022171402e+18
+% mediandisp 20.75
+% ok3d 1
+% turning -35
+% foot_xw 0.55869
+% foot_zw 15.0116
+% foot_u 635
+% foot_v 355
+% fitted_valid 1
+% fitted_xw 0.55869
+% fitted_zw 14.9919
+% fitted_disp 20.781
+;
+img_000000172_c0.pgm
+1176 640
+0 1
+# 0
+1 78
+0.00000
+600 205 656 355
+0
+% TimestampNs 1.333361022229668e+18
+% mediandisp 20.6683
+% ok3d 1
+% turning -36
+% foot_xw 0.4859
+% foot_zw 15.0629
+% foot_u 628
+% foot_v 355
+% fitted_valid 1
+% fitted_xw 0.4859
+% fitted_zw 15.0595
+% fitted_disp 20.6736
+;
+img_000000173_c0.pgm
+1176 640
+0 1
+# 0
+1 79
+0.00000
+598 205 648 354
+0
+% TimestampNs 1.333361022290178e+18
+% mediandisp 20.5926
+% ok3d 1
+% turning -37
+% foot_xw 0.43383
+% foot_zw 15.1107
+% foot_u 623
+% foot_v 354
+% fitted_valid 1
+% fitted_xw 0.43383
+% fitted_zw 15.1149
+% fitted_disp 20.5862
+;
+img_000000174_c0.pgm
+1176 640
+0 1
+# 0
+1 80
+0.00000
+596 202 644 355
+0
+% TimestampNs 1.333361022350671e+18
+% mediandisp 20.4542
+% ok3d 1
+% turning -38
+% foot_xw 0.40373
+% foot_zw 15.2007
+% foot_u 620
+% foot_v 355
+% fitted_valid 1
+% fitted_xw 0.40373
+% fitted_zw 15.1864
+% fitted_disp 20.4762
+;
+img_000000175_c0.pgm
+1176 640
+0 1
+# 0
+1 81
+0.00000
+590 205 644 356
+0
+% TimestampNs 1.333361022411689e+18
+% mediandisp 20.3
+% ok3d 1
+% turning -39
+% foot_xw 0.37342
+% foot_zw 15.3024
+% foot_u 617
+% foot_v 356
+% fitted_valid 1
+% fitted_xw 0.37342
+% fitted_zw 15.2653
+% fitted_disp 20.3562
+;
+img_000000176_c0.pgm
+1176 640
+0 1
+# 0
+1 82
+0.00000
+583 207 635 355
+0
+% TimestampNs 1.333361022472589e+18
+% mediandisp 20.1667
+% ok3d 1
+% turning -40
+% foot_xw 0.28783
+% foot_zw 15.3904
+% foot_u 609
+% foot_v 355
+% fitted_valid 1
+% fitted_xw 0.28783
+% fitted_zw 15.3621
+% fitted_disp 20.2088
+;
+img_000000177_c0.pgm
+1176 640
+0 1
+# 0
+1 83
+0.00000
+563 208 623 354
+0
+% TimestampNs 1.333361022593373e+18
+% mediandisp 19.8571
+% ok3d 1
+% turning -41
+% foot_xw 0.11321
+% foot_zw 15.5998
+% foot_u 593
+% foot_v 354
+% fitted_valid 1
+% fitted_xw 0.11321
+% fitted_zw 15.5786
+% fitted_disp 19.8879
+;
+img_000000178_c0.pgm
+1176 640
+0 1
+# 0
+1 84
+0.00000
+559 209 615 352
+0
+% TimestampNs 1.333361022651626e+18
+% mediandisp 19.75
+% ok3d 1
+% turning -42
+% foot_xw 0.046355
+% foot_zw 15.6733
+% foot_u 587
+% foot_v 352
+% fitted_valid 1
+% fitted_xw 0.046355
+% fitted_zw 15.6571
+% fitted_disp 19.7731
+;
+img_000000179_c0.pgm
+1176 640
+0 1
+# 0
+1 85
+0.00000
+555 208 609 354
+0
+% TimestampNs 1.333361022712697e+18
+% mediandisp 19.75
+% ok3d 1
+% turning -43
+% foot_xw -0.0093932
+% foot_zw 15.6733
+% foot_u 582
+% foot_v 354
+% fitted_valid 1
+% fitted_xw -0.0093932
+% fitted_zw 15.684
+% fitted_disp 19.7347
+;
+img_000000180_c0.pgm
+1176 640
+0 1
+# 0
+1 86
+0.00000
+549 207 601 355
+0
+% TimestampNs 1.333361022772797e+18
+% mediandisp 19.5868
+% ok3d 1
+% turning -44
+% foot_xw -0.089075
+% foot_zw 15.7882
+% foot_u 575
+% foot_v 355
+% fitted_valid 1
+% fitted_xw -0.089075
+% fitted_zw 15.7947
+% fitted_disp 19.5777
+;
+img_000000181_c0.pgm
+1176 640
+0 1
+# 0
+1 87
+0.00000
+543 208 597 355
+0
+% TimestampNs 1.333361022833466e+18
+% mediandisp 19.3333
+% ok3d 1
+% turning -45
+% foot_xw -0.14862
+% foot_zw 15.971
+% foot_u 570
+% foot_v 355
+% fitted_valid 1
+% fitted_xw -0.14862
+% fitted_zw 15.938
+% fitted_disp 19.3786
+;
+img_000000182_c0.pgm
+1176 640
+0 1
+# 0
+1 88
+0.00000
+534 211 588 356
+0
+% TimestampNs 1.333361022954476e+18
+% mediandisp 19.2434
+% ok3d 1
+% turning -46
+% foot_xw -0.25281
+% foot_zw 16.0364
+% foot_u 561
+% foot_v 356
+% fitted_valid 1
+% fitted_xw -0.25281
+% fitted_zw 16.0292
+% fitted_disp 19.2531
+;
+img_000000183_c0.pgm
+1176 640
+0 1
+# 0
+1 89
+0.00000
+526 213 584 354
+0
+% TimestampNs 1.333361023014873e+18
+% mediandisp 19.0612
+% ok3d 1
+% turning -47
+% foot_xw -0.32556
+% foot_zw 16.1709
+% foot_u 555
+% foot_v 354
+% fitted_valid 1
+% fitted_xw -0.32556
+% fitted_zw 16.1481
+% fitted_disp 19.0916
+;
+img_000000184_c0.pgm
+1176 640
+0 1
+# 0
+1 90
+0.00000
+524 212 576 350
+0
+% TimestampNs 1.333361023075392e+18
+% mediandisp 18.9444
+% ok3d 1
+% turning -48
+% foot_xw -0.38633
+% foot_zw 16.2575
+% foot_u 550
+% foot_v 350
+% fitted_valid 1
+% fitted_xw -0.38633
+% fitted_zw 16.2312
+% fitted_disp 18.979
+;
+img_000000185_c0.pgm
+1176 640
+0 1
+# 0
+1 91
+0.00000
+524 211 568 349
+0
+% TimestampNs 1.333361023135931e+18
+% mediandisp 18.95
+% ok3d 1
+% turning -49
+% foot_xw -0.43265
+% foot_zw 16.2524
+% foot_u 546
+% foot_v 349
+% fitted_valid 1
+% fitted_xw -0.43265
+% fitted_zw 16.2506
+% fitted_disp 18.9524
+;
+img_000000186_c0.pgm
+1176 640
+0 1
+# 0
+1 92
+0.00000
+520 211 560 350
+0
+% TimestampNs 1.333361023194392e+18
+% mediandisp 18.8333
+% ok3d 1
+% turning -50
+% foot_xw -0.50616
+% foot_zw 16.3415
+% foot_u 540
+% foot_v 350
+% fitted_valid 1
+% fitted_xw -0.50616
+% fitted_zw 16.3413
+% fitted_disp 18.8336
+;
+img_000000187_c0.pgm
+1176 640
+0 1
+# 0
+1 93
+0.00000
+500 212 556 349
+0
+% TimestampNs 1.333361023315999e+18
+% mediandisp 18.583
+% ok3d 1
+% turning -51
+% foot_xw -0.65662
+% foot_zw 16.5353
+% foot_u 528
+% foot_v 349
+% fitted_valid 1
+% fitted_xw -0.65662
+% fitted_zw 16.5338
+% fitted_disp 18.585
+;
+img_000000188_c0.pgm
+1176 640
+0 1
+# 0
+1 94
+0.00000
+493 212 551 351
+0
+% TimestampNs 1.333361023376132e+18
+% mediandisp 18.3889
+% ok3d 1
+% turning -52
+% foot_xw -0.73656
+% foot_zw 16.6907
+% foot_u 522
+% foot_v 351
+% fitted_valid 1
+% fitted_xw -0.73656
+% fitted_zw 16.6677
+% fitted_disp 18.4174
+;
+img_000000189_c0.pgm
+1176 640
+0 1
+# 0
+1 95
+0.00000
+486 214 550 350
+0
+% TimestampNs 1.33336102343682e+18
+% mediandisp 18.2623
+% ok3d 1
+% turning -53
+% foot_xw -0.79064
+% foot_zw 16.793
+% foot_u 518
+% foot_v 350
+% fitted_valid 1
+% fitted_xw -0.79064
+% fitted_zw 16.7565
+% fitted_disp 18.307
+;
+img_000000190_c0.pgm
+1176 640
+0 1
+# 0
+1 96
+0.00000
+482 213 542 348
+0
+% TimestampNs 1.333361023496319e+18
+% mediandisp 18.1339
+% ok3d 1
+% turning -54
+% foot_xw -0.86985
+% foot_zw 16.8976
+% foot_u 512
+% foot_v 348
+% fitted_valid 1
+% fitted_xw -0.86985
+% fitted_zw 16.8588
+% fitted_disp 18.1808
+;
+img_000000191_c0.pgm
+1176 640
+0 1
+# 0
+1 97
+0.00000
+475 213 521 347
+0
+% TimestampNs 1.333361023617539e+18
+% mediandisp 18.0789
+% ok3d 1
+% turning -55
+% foot_xw -1.0433
+% foot_zw 16.9412
+% foot_u 498
+% foot_v 347
+% fitted_valid 1
+% fitted_xw -1.0433
+% fitted_zw 16.97
+% fitted_disp 18.0446
+;
+img_000000192_c0.pgm
+1176 640
+0 1
+# 0
+1 98
+0.00000
+468 212 518 347
+0
+% TimestampNs 1.333361023677209e+18
+% mediandisp 17.8914
+% ok3d 1
+% turning -56
+% foot_xw -1.1169
+% foot_zw 17.0992
+% foot_u 493
+% foot_v 347
+% fitted_valid 1
+% fitted_xw -1.1169
+% fitted_zw 17.1017
+% fitted_disp 17.8885
+;
+img_000000193_c0.pgm
+1176 640
+0 1
+# 0
+1 99
+0.00000
+463 213 515 347
+0
+% TimestampNs 1.333361023737099e+18
+% mediandisp 17.8333
+% ok3d 1
+% turning -57
+% foot_xw -1.1703
+% foot_zw 17.1485
+% foot_u 489
+% foot_v 347
+% fitted_valid 1
+% fitted_xw -1.1703
+% fitted_zw 17.1577
+% fitted_disp 17.8226
+;
+img_000000194_c0.pgm
+1176 640
+0 1
+# 0
+1 100
+0.00000
+457 214 511 346
+0
+% TimestampNs 1.33336102379751e+18
+% mediandisp 17.7368
+% ok3d 1
+% turning -58
+% foot_xw -1.2393
+% foot_zw 17.2309
+% foot_u 484
+% foot_v 346
+% fitted_valid 1
+% fitted_xw -1.2393
+% fitted_zw 17.2414
+% fitted_disp 17.7248
+;
+img_000000195_c0.pgm
+1176 640
+0 1
+# 0
+1 101
+0.00000
+452 216 504 346
+0
+% TimestampNs 1.33336102391792e+18
+% mediandisp 17.5633
+% ok3d 1
+% turning -59
+% foot_xw -1.3279
+% foot_zw 17.3825
+% foot_u 478
+% foot_v 346
+% fitted_valid 1
+% fitted_xw -1.3279
+% fitted_zw 17.3766
+% fitted_disp 17.57
+;
+img_000000196_c0.pgm
+1176 640
+0 1
+# 0
+1 102
+0.00000
+447 216 503 345
+0
+% TimestampNs 1.333361023978337e+18
+% mediandisp 17.3846
+% ok3d 1
+% turning -60
+% foot_xw -1.3806
+% foot_zw 17.5418
+% foot_u 475
+% foot_v 345
+% fitted_valid 1
+% fitted_xw -1.3806
+% fitted_zw 17.4993
+% fitted_disp 17.4318
+;
+img_000000197_c0.pgm
+1176 640
+0 1
+# 0
+1 103
+0.00000
+446 216 496 345
+0
+% TimestampNs 1.33336102403877e+18
+% mediandisp 17.35
+% ok3d 1
+% turning -61
+% foot_xw -1.4344
+% foot_zw 17.5726
+% foot_u 471
+% foot_v 345
+% fitted_valid 1
+% fitted_xw -1.4344
+% fitted_zw 17.5443
+% fitted_disp 17.3813
+;
+img_000000198_c0.pgm
+1176 640
+0 1
+# 0
+1 104
+0.00000
+444 216 490 344
+0
+% TimestampNs 1.333361024099159e+18
+% mediandisp 17.25
+% ok3d 1
+% turning -62
+% foot_xw -1.4944
+% foot_zw 17.6631
+% foot_u 467
+% foot_v 344
+% fitted_valid 1
+% fitted_xw -1.4944
+% fitted_zw 17.6289
+% fitted_disp 17.2873
+;
+img_000000199_c0.pgm
+1176 640
+0 1
+# 0
+1 105
+0.00000
+441 216 485 343
+0
+% TimestampNs 1.333361024158892e+18
+% mediandisp 17.2
+% ok3d 1
+% turning -63
+% foot_xw -1.5502
+% foot_zw 17.7083
+% foot_u 463
+% foot_v 343
+% fitted_valid 1
+% fitted_xw -1.5502
+% fitted_zw 17.6838
+% fitted_disp 17.2265
+;
+img_000000200_c0.pgm
+1176 640
+0 1
+# 0
+1 106
+0.00000
+424 218 474 342
+0
+% TimestampNs 1.333361024280424e+18
+% mediandisp 17.0638
+% ok3d 1
+% turning -64
+% foot_xw -1.7441
+% foot_zw 17.8328
+% foot_u 449
+% foot_v 342
+% fitted_valid 1
+% fitted_xw -1.7441
+% fitted_zw 17.8547
+% fitted_disp 17.0405
+;
+img_000000201_c0.pgm
+1176 640
+0 1
+# 0
+1 107
+0.00000
+420 217 468 343
+0
+% TimestampNs 1.333361024340614e+18
+% mediandisp 16.985
+% ok3d 1
+% turning -65
+% foot_xw -1.8175
+% foot_zw 17.9068
+% foot_u 444
+% foot_v 343
+% fitted_valid 1
+% fitted_xw -1.8175
+% fitted_zw 17.936
+% fitted_disp 16.9542
+;
+img_000000202_c0.pgm
+1176 640
+0 1
+# 0
+1 108
+0.00000
+416 216 462 342
+0
+% TimestampNs 1.333361024401173e+18
+% mediandisp 16.9167
+% ok3d 1
+% turning -66
+% foot_xw -1.8904
+% foot_zw 17.9707
+% foot_u 439
+% foot_v 342
+% fitted_valid 1
+% fitted_xw -1.8904
+% fitted_zw 18.011
+% fitted_disp 16.8746
+;
+img_000000203_c0.pgm
+1176 640
+0 1
+# 0
+1 109
+0.00000
+414 217 460 341
+0
+% TimestampNs 1.333361024462229e+18
+% mediandisp 16.8462
+% ok3d 1
+% turning -67
+% foot_xw -1.9249
+% foot_zw 18.0377
+% foot_u 437
+% foot_v 341
+% fitted_valid 1
+% fitted_xw -1.9249
+% fitted_zw 18.0695
+% fitted_disp 16.8132
+;
+img_000000204_c0.pgm
+1176 640
+0 1
+# 0
+1 110
+0.00000
+408 217 454 339
+0
+% TimestampNs 1.333361024520477e+18
+% mediandisp 16.8182
+% ok3d 1
+% turning -68
+% foot_xw -2.0068
+% foot_zw 18.0631
+% foot_u 431
+% foot_v 339
+% fitted_valid 1
+% fitted_xw -2.0068
+% fitted_zw 18.1248
+% fitted_disp 16.7545
+;
+img_000000205_c0.pgm
+1176 640
+0 1
+# 0
+1 111
+0.00000
+403 217 451 338
+0
+% TimestampNs 1.333361024580947e+18
+% mediandisp 16.7222
+% ok3d 1
+% turning -69
+% foot_xw -2.0716
+% foot_zw 18.1554
+% foot_u 427
+% foot_v 338
+% fitted_valid 1
+% fitted_xw -2.0716
+% fitted_zw 18.2141
+% fitted_disp 16.6624
+;
+img_000000206_c0.pgm
+1176 640
+0 1
+# 0
+1 112
+0.00000
+393 217 449 336
+0
+% TimestampNs 1.333361024702339e+18
+% mediandisp 16.413
+% ok3d 1
+% turning -70
+% foot_xw -2.1931
+% foot_zw 18.4618
+% foot_u 421
+% foot_v 336
+% fitted_valid 1
+% fitted_xw -2.1931
+% fitted_zw 18.4679
+% fitted_disp 16.4071
+;
+img_000000207_c0.pgm
+1176 640
+0 1
+# 0
+1 113
+0.00000
+392 219 448 337
+0
+% TimestampNs 1.333361024762967e+18
+% mediandisp 16.3
+% ok3d 1
+% turning -71
+% foot_xw -2.2226
+% foot_zw 18.5776
+% foot_u 420
+% foot_v 337
+% fitted_valid 1
+% fitted_xw -2.2226
+% fitted_zw 18.5573
+% fitted_disp 16.3197
+;
+img_000000208_c0.pgm
+1176 640
+0 1
+# 0
+1 114
+0.00000
+389 219 443 338
+0
+% TimestampNs 1.333361024823463e+18
+% mediandisp 16.2155
+% ok3d 1
+% turning -72
+% foot_xw -2.2891
+% foot_zw 18.6647
+% foot_u 416
+% foot_v 338
+% fitted_valid 1
+% fitted_xw -2.2891
+% fitted_zw 18.6462
+% fitted_disp 16.2333
+;
+img_000000209_c0.pgm
+1176 640
+0 1
+# 0
+1 115
+0.00000
+387 220 439 337
+0
+% TimestampNs 1.333361024883686e+18
+% mediandisp 16.1667
+% ok3d 1
+% turning -73
+% foot_xw -2.3372
+% foot_zw 18.7148
+% foot_u 413
+% foot_v 337
+% fitted_valid 1
+% fitted_xw -2.3372
+% fitted_zw 18.7022
+% fitted_disp 16.1788
+;
+img_000000210_c0.pgm
+1176 640
+0 1
+# 0
+1 116
+0.00000
+386 217 436 335
+0
+% TimestampNs 1.333361024944287e+18
+% mediandisp 16.2143
+% ok3d 1
+% turning -74
+% foot_xw -2.3572
+% foot_zw 18.6641
+% foot_u 411
+% foot_v 335
+% fitted_valid 1
+% fitted_xw -2.3572
+% fitted_zw 18.678
+% fitted_disp 16.2009
+;
+img_000000211_c0.pgm
+1176 640
+0 1
+# 0
+1 117
+0.00000
+381 215 429 336
+0
+% TimestampNs 1.33336102506477e+18
+% mediandisp 15.9439
+% ok3d 1
+% turning -75
+% foot_xw -2.4818
+% foot_zw 18.9495
+% foot_u 405
+% foot_v 336
+% fitted_valid 1
+% fitted_xw -2.4818
+% fitted_zw 18.9274
+% fitted_disp 15.9645
+;
+img_000000212_c0.pgm
+1176 640
+0 1
+# 0
+1 118
+0.00000
+380 216 426 337
+0
+% TimestampNs 1.333361025123617e+18
+% mediandisp 16
+% ok3d 1
+% turning -76
+% foot_xw -2.5003
+% foot_zw 18.8894
+% foot_u 403
+% foot_v 337
+% fitted_valid 1
+% fitted_xw -2.5003
+% fitted_zw 18.8954
+% fitted_disp 15.9944
+;
+img_000000213_c0.pgm
+1176 640
+0 1
+# 0
+1 119
+0.00000
+377 215 421 338
+0
+% TimestampNs 1.33336102518444e+18
+% mediandisp 15.875
+% ok3d 1
+% turning -77
+% foot_xw -2.5763
+% foot_zw 19.0237
+% foot_u 399
+% foot_v 338
+% fitted_valid 1
+% fitted_xw -2.5763
+% fitted_zw 19.0221
+% fitted_disp 15.8765
+;
+img_000000214_c0.pgm
+1176 640
+0 1
+# 0
+1 120
+0.00000
+372 216 416 338
+0
+% TimestampNs 1.333361025245122e+18
+% mediandisp 15.8386
+% ok3d 1
+% turning -78
+% foot_xw -2.652
+% foot_zw 19.0625
+% foot_u 394
+% foot_v 338
+% fitted_valid 1
+% fitted_xw -2.652
+% fitted_zw 19.0837
+% fitted_disp 15.8191
+;
+img_000000215_c0.pgm
+1176 640
+0 1
+# 0
+1 121
+0.00000
+369 214 415 339
+0
+% TimestampNs 1.333361025305474e+18
+% mediandisp 15.7433
+% ok3d 1
+% turning -79
+% foot_xw -2.6967
+% foot_zw 19.1671
+% foot_u 392
+% foot_v 339
+% fitted_valid 1
+% fitted_xw -2.6967
+% fitted_zw 19.1764
+% fitted_disp 15.7348
+;
+img_000000216_c0.pgm
+1176 640
+0 1
+# 0
+1 122
+0.00000
+366 215 412 332
+0
+% TimestampNs 1.333361025365952e+18
+% mediandisp 15.6126
+% ok3d 1
+% turning -80
+% foot_xw -2.7624
+% foot_zw 19.3091
+% foot_u 389
+% foot_v 332
+% fitted_valid 1
+% fitted_xw -2.7624
+% fitted_zw 19.3057
+% fitted_disp 15.6157
+;
+img_000000217_c0.pgm
+1176 640
+0 1
+# 0
+1 123
+0.00000
+361 214 409 331
+0
+% TimestampNs 1.333361025485892e+18
+% mediandisp 15.4591
+% ok3d 1
+% turning -81
+% foot_xw -2.8479
+% foot_zw 19.4819
+% foot_u 385
+% foot_v 331
+% fitted_valid 1
+% fitted_xw -2.8479
+% fitted_zw 19.4667
+% fitted_disp 15.4724
+;
+img_000000218_c0.pgm
+1176 640
+0 1
+# 0
+1 124
+0.00000
+356 212 404 326
+0
+% TimestampNs 1.333361025546611e+18
+% mediandisp 15.375
+% ok3d 1
+% turning -82
+% foot_xw -2.9357
+% foot_zw 19.5758
+% foot_u 380
+% foot_v 326
+% fitted_valid 1
+% fitted_xw -2.9357
+% fitted_zw 19.5737
+% fitted_disp 15.3769
+;
+img_000000219_c0.pgm
+1176 640
+0 1
+# 0
+1 125
+0.00000
+355 212 401 325
+0
+% TimestampNs 1.333361025606204e+18
+% mediandisp 15.2857
+% ok3d 1
+% turning -83
+% foot_xw -2.9823
+% foot_zw 19.6789
+% foot_u 378
+% foot_v 325
+% fitted_valid 1
+% fitted_xw -2.9823
+% fitted_zw 19.6692
+% fitted_disp 15.294
+;
+img_000000220_c0.pgm
+1176 640
+0 1
+# 0
+1 126
+0.00000
+353 212 399 325
+0
+% TimestampNs 1.333361025666161e+18
+% mediandisp 15.3077
+% ok3d 1
+% turning -84
+% foot_xw -3.0066
+% foot_zw 19.6529
+% foot_u 376
+% foot_v 325
+% fitted_valid 1
+% fitted_xw -3.0066
+% fitted_zw 19.6611
+% fitted_disp 15.3007
+;
+img_000000221_c0.pgm
+1176 640
+0 1
+# 0
+1 127
+0.00000
+350 213 396 325
+0
+% TimestampNs 1.333361025726753e+18
+% mediandisp 15.2105
+% ok3d 1
+% turning -85
+% foot_xw -3.0699
+% foot_zw 19.7664
+% foot_u 373
+% foot_v 325
+% fitted_valid 1
+% fitted_xw -3.0699
+% fitted_zw 19.772
+% fitted_disp 15.2058
+;
+img_000000222_c0.pgm
+1176 640
+0 1
+# 0
+1 128
+0.00000
+348 215 392 325
+0
+% TimestampNs 1.333361025847519e+18
+% mediandisp 15.0799
+% ok3d 1
+% turning -86
+% foot_xw -3.1412
+% foot_zw 19.9215
+% foot_u 370
+% foot_v 325
+% fitted_valid 1
+% fitted_xw -3.1412
+% fitted_zw 19.9175
+% fitted_disp 15.0833
+;
+img_000000223_c0.pgm
+1176 640
+0 1
+# 0
+1 129
+0.00000
+347 216 389 324
+0
+% TimestampNs 1.333361025908071e+18
+% mediandisp 15.0919
+% ok3d 1
+% turning -87
+% foot_xw -3.1678
+% foot_zw 19.9064
+% foot_u 368
+% foot_v 324
+% fitted_valid 1
+% fitted_xw -3.1678
+% fitted_zw 19.9179
+% fitted_disp 15.0823
+;
+img_000000224_c0.pgm
+1176 640
+0 1
+# 0
+1 130
+0.00000
+347 217 387 323
+0
+% TimestampNs 1.333361025968522e+18
+% mediandisp 15.0632
+% ok3d 1
+% turning -88
+% foot_xw -3.1887
+% foot_zw 19.9404
+% foot_u 367
+% foot_v 323
+% fitted_valid 1
+% fitted_xw -3.1887
+% fitted_zw 19.9522
+% fitted_disp 15.0533
+;
+img_000000225_c0.pgm
+1176 640
+0 1
+# 0
+1 131
+0.00000
+345 215 387 321
+0
+% TimestampNs 1.333361026028841e+18
+% mediandisp 14.8333
+% ok3d 1
+% turning -89
+% foot_xw -3.2546
+% foot_zw 20.2204
+% foot_u 366
+% foot_v 321
+% fitted_valid 1
+% fitted_xw -3.2546
+% fitted_zw 20.1918
+% fitted_disp 14.8564
+;
+img_000000226_c0.pgm
+1176 640
+0 1
+# 0
+1 132
+0.00000
+344 215 386 320
+0
+% TimestampNs 1.333361026088362e+18
+% mediandisp 14.8636
+% ok3d 1
+% turning -90
+% foot_xw -3.2626
+% foot_zw 20.1823
+% foot_u 365
+% foot_v 320
+% fitted_valid 1
+% fitted_xw -3.2626
+% fitted_zw 20.1661
+% fitted_disp 14.8767
+;
+img_000000227_c0.pgm
+1176 640
+0 1
+# 0
+1 133
+0.00000
+340 217 384 320
+0
+% ok3d 0
+;
+img_000000228_c0.pgm
+1176 640
+0 1
+# 0
+1 134
+0.00000
+338 218 382 320
+0
+% ok3d 0
+;
+img_000000229_c0.pgm
+1176 640
+0 1
+# 0
+1 135
+0.00000
+335 218 379 321
+0
+% ok3d 0
+;
+img_000000230_c0.pgm
+1176 640
+0 1
+# 0
+1 136
+0.00000
+336 214 378 321
+0
+% ok3d 0
+;
+img_000000231_c0.pgm
+1176 640
+0 1
+# 0
+1 137
+0.00000
+334 213 376 321
+0
+% ok3d 0
+;
+img_000000232_c0.pgm
+1176 640
+0 1
+# 0
+1 138
+0.00000
+331 212 373 321
+0
+% ok3d 0
+;
+img_000000233_c0.pgm
+1176 640
+0 1
+# 0
+1 139
+0.00000
+330 212 372 321
+0
+% ok3d 0
+;
+img_000000234_c0.pgm
+1176 640
+0 1
+# 0
+1 140
+0.00000
+330 212 372 321
+0
+% ok3d 0
+;
+img_000000235_c0.pgm
+1176 640
+0 1
+# 0
+1 141
+0.00000
+330 212 372 321
+0
+% ok3d 0
+;
+img_000000236_c0.pgm
+1176 640
+0 1
+# 0
+1 142
+0.00000
+331 213 371 320
+0
+% ok3d 0
+;
+img_000000237_c0.pgm
+1176 640
+0 1
+# 0
+1 143
+0.00000
+332 214 370 319
+0
+% ok3d 0
+;
+img_000000238_c0.pgm
+1176 640
+0 1
+# 0
+1 144
+0.00000
+332 215 370 318
+0
+% ok3d 0
+;
+img_000000239_c0.pgm
+1176 640
+0 1
+# 0
+1 145
+0.00000
+331 214 369 318
+0
+% ok3d 0
+;
+img_000000240_c0.pgm
+1176 640
+0 1
+# 0
+1 146
+0.00000
+331 214 369 318
+0
+% ok3d 0
+;
+img_000000241_c0.pgm
+1176 640
+0 1
+# 0
+1 147
+0.00000
+331 214 369 318
+0
+% ok3d 0
+;
+img_000000242_c0.pgm
+1176 640
+0 1
+# 0
+1 148
+0.00000
+331 214 369 318
+0
+% ok3d 0
+;
+img_000000243_c0.pgm
+1176 640
+0 1
+# 0
+1 149
+0.00000
+331 214 369 318
+0
+% ok3d 0
+;
+img_000000244_c0.pgm
+1176 640
+0 1
+# 0
+1 150
+0.00000
+331 214 369 318
+0
+% ok3d 0
+;
+img_000000245_c0.pgm
+1176 640
+0 1
+# 0
+1 151
+0.00000
+331 214 369 318
+0
+% ok3d 0
+;
+img_000000246_c0.pgm
+1176 640
+0 1
+# 0
+1 152
+0.00000
+331 214 369 314
+0
+% ok3d 0
+;
+img_000000247_c0.pgm
+1176 640
+0 1
+# 0
+1 153
+0.00000
+331 214 369 314
+0
+% ok3d 0
+;
+img_000000248_c0.pgm
+1176 640
+0 1
+# 0
+1 154
+0.00000
+331 214 369 314
+0
+% ok3d 0
+;
+img_000000249_c0.pgm
+1176 640
+0 1
+# 0
+1 155
+0.00000
+331 215 369 314
+0
+% ok3d 0
+;
+img_000000250_c0.pgm
+1176 640
+0 1
+# 0
+1 156
+0.00000
+331 216 369 315
+0
+% ok3d 0
+;
+img_000000251_c0.pgm
+1176 640
+0 1
+# 0
+1 157
+0.00000
+336 216 370 315
+0
+% ok3d 0
+;
+img_000000252_c0.pgm
+1176 640
+0 1
+# 0
+1 158
+0.00000
+334 216 372 315
+0
+% ok3d 0
+;
+img_000000253_c0.pgm
+1176 640
+0 1
+# 0
+1 159
+0.00000
+341 215 377 316
+0
+% ok3d 0
+;
+img_000000254_c0.pgm
+1176 640
+0 1
+# 0
+1 160
+0.00000
+341 215 381 316
+0
+% ok3d 0
+;
+img_000000255_c0.pgm
+1176 640
+0 1
+# 0
+1 161
+0.00000
+341 215 381 316
+0
+% ok3d 0
+;
+img_000000256_c0.pgm
+1176 640
+0 1
+# 0
+1 162
+0.00000
+345 215 385 314
+0
+% ok3d 0
+;
+img_000000257_c0.pgm
+1176 640
+0 1
+# 0
+1 163
+0.00000
+343 217 387 314
+0
+% ok3d 0
+;
+img_000000258_c0.pgm
+1176 640
+0 1
+# 0
+1 164
+0.00000
+350 220 390 313
+0
+% ok3d 0
+;
+img_000000259_c0.pgm
+1176 640
+0 1
+# 0
+1 165
+0.00000
+354 220 392 312
+0
+% ok3d 0
+;
+img_000000260_c0.pgm
+1176 640
+0 1
+# 0
+1 166
+0.00000
+355 220 393 312
+0
+% ok3d 0
+;
+img_000000261_c0.pgm
+1176 640
+0 1
+# 0
+1 167
+0.00000
+354 219 394 313
+0
+% ok3d 0
+;
+img_000000262_c0.pgm
+1176 640
+0 1
+# 0
+1 168
+0.00000
+360 219 396 313
+0
+% ok3d 0
+;
+img_000000263_c0.pgm
+1176 640
+0 1
+# 0
+1 169
+0.00000
+363 219 399 313
+0
+% ok3d 0
+;
+img_000000264_c0.pgm
+1176 640
+0 1
+# 0
+1 170
+0.00000
+362 219 398 313
+0
+% ok3d 0
+;
+img_000000265_c0.pgm
+1176 640
+0 1
+# 0
+1 171
+0.00000
+363 219 399 313
+0
+% ok3d 0
+;
+img_000000266_c0.pgm
+1176 640
+0 1
+# 0
+1 172
+0.00000
+364 219 406 313
+0
+% ok3d 0
+;
+img_000000267_c0.pgm
+1176 640
+0 1
+# 0
+1 173
+0.00000
+361 219 403 313
+0
+% ok3d 0
+;
+img_000000268_c0.pgm
+1176 640
+0 1
+# 0
+1 174
+0.00000
+363 220 407 312
+0
+% ok3d 0
+;
+img_000000269_c0.pgm
+1176 640
+0 1
+# 0
+1 175
+0.00000
+363 220 407 312
+0
+% ok3d 0
+;
+img_000000270_c0.pgm
+1176 640
+0 1
+# 0
+1 176
+0.00000
+364 220 408 312
+0
+% ok3d 0
+;
+img_000000271_c0.pgm
+1176 640
+0 1
+# 0
+1 177
+0.00000
+365 220 409 312
+0
+% ok3d 0
+;
+img_000000272_c0.pgm
+1176 640
+0 1
+# 0
+1 178
+0.00000
+366 220 410 312
+0
+% ok3d 0
+;
+img_000000273_c0.pgm
+1176 640
+0 1
+# 0
+1 179
+0.00000
+367 220 411 312
+0
+% ok3d 0
+;
+img_000000274_c0.pgm
+1176 640
+0 1
+# 0
+1 180
+0.00000
+375 220 419 312
+0
+% ok3d 0
+;
+img_000000275_c0.pgm
+1176 640
+0 1
+# 0
+1 181
+0.00000
+369 220 413 312
+0
+% ok3d 0
+;
+img_000000276_c0.pgm
+1176 640
+0 1
+# 0
+1 182
+0.00000
+385 220 419 312
+0
+% ok3d 0
+;
+img_000000277_c0.pgm
+1176 640
+0 1
+# 0
+1 183
+0.00000
+386 220 420 312
+0
+% ok3d 0
+;
+img_000000278_c0.pgm
+1176 640
+0 1
+# 0
+1 184
+0.00000
+387 220 421 312
+0
+% ok3d 0
+;
+img_000000279_c0.pgm
+1176 640
+0 1
+# 0
+1 185
+0.00000
+387 220 421 312
+0
+% ok3d 0
+;
+img_000000280_c0.pgm
+1176 640
+0 1
+# 0
+1 186
+0.00000
+386 220 426 311
+0
+% ok3d 0
+;
+img_000000281_c0.pgm
+1176 640
+0 1
+# 0
+1 187
+0.00000
+389 220 429 311
+0
+% ok3d 0
+;
+img_000000282_c0.pgm
+1176 640
+0 1
+# 0
+1 188
+0.00000
+389 220 429 311
+0
+% ok3d 0
+;
+img_000000283_c0.pgm
+1176 640
+0 1
+# 0
+1 189
+0.00000
+393 219 429 310
+0
+% ok3d 0
+;
+img_000000284_c0.pgm
+1176 640
+0 1
+# 0
+1 190
+0.00000
+393 218 429 310
+0
+% ok3d 0
+;
+img_000000285_c0.pgm
+1176 640
+0 1
+# 0
+1 191
+0.00000
+393 218 429 310
+0
+% ok3d 0
+;
+img_000000286_c0.pgm
+1176 640
+0 1
+# 0
+1 192
+0.00000
+400 218 429 310
+0
+% ok3d 0
+;
+img_000000287_c0.pgm
+1176 640
+0 1
+# 0
+1 193
+0.00000
+399 218 428 310
+0
+% ok3d 0
+;
+img_000000288_c0.pgm
+1176 640
+0 1
+# 0
+1 194
+0.00000
+399 216 431 310
+0
+% ok3d 0
+;
+img_000000289_c0.pgm
+1176 640
+0 1
+# 0
+1 195
+0.00000
+402 216 427 310
+0
+% ok3d 0
+;
+img_000000290_c0.pgm
+1176 640
+0 1
+# 0
+1 196
+0.00000
+400 216 429 310
+0
+% ok3d 0
+;
+img_000000291_c0.pgm
+1176 640
+0 1
+# 0
+1 197
+0.00000
+399 216 428 310
+0
+% ok3d 0
+;
+img_000000292_c0.pgm
+1176 640
+0 1
+# 0
+1 198
+0.00000
+398 216 432 310
+0
+% ok3d 0
+;
+img_000000293_c0.pgm
+1176 640
+0 1
+# 0
+1 199
+0.00000
+396 216 430 310
+0
+% ok3d 0
+;
+img_000000294_c0.pgm
+1176 640
+0 1
+# 0
+1 200
+0.00000
+395 216 429 310
+0
+% ok3d 0
+;
+img_000000295_c0.pgm
+1176 640
+0 1
+# 0
+1 201
+0.00000
+394 216 428 310
+0
+% ok3d 0
+;
+img_000000296_c0.pgm
+1176 640
+0 1
+# 0
+1 202
+0.00000
+391 216 429 310
+0
+% ok3d 0
+;
+img_000000297_c0.pgm
+1176 640
+0 1
+# 0
+1 203
+0.00000
+389 216 427 310
+0
+% ok3d 0
+;
+img_000000298_c0.pgm
+1176 640
+0 1
+# 0
+1 204
+0.00000
+389 216 427 310
+0
+% ok3d 0
+;
+img_000000299_c0.pgm
+1176 640
+0 1
+# 0
+1 205
+0.00000
+391 216 427 310
+0
+% ok3d 0
