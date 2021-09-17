@@ -8,15 +8,11 @@ from os import listdir
 from os.path import isfile, join
 import sys
 
-### Change filepath according to your machine config
-trainDataPath = "C:\\Users\\HP\\Desktop\\Research\\Trajectory_Markov_Research\\Implementations\Dataset_Dailmer\\Data\\TrainingData\\2012-04-02_115542\\RectGrabber\\"
 
 class preProcessData:
     
-    def readData(self):
-        #trainDataP = "C:\\Users\\HP\\Desktop\\Research\\Trajectory_Markov_Research\\Implementations\Dataset_Dailmer\\Data\\TrainingData\\"
+    def readData(self, trainDataP):
         #dirs = [f for f in listdir(trainDataP)]
-        #print(dirs)
         #allTrainingData = []
         #for directory in dirs:
         #    newPath = trainDataP + directory + "\\RectGrabber\\"
@@ -35,7 +31,6 @@ class preProcessData:
         
     def showSampleImages(self):
         ### TODO: Use data from allTrainingData list in the future
-        filenames = [f for f in listdir(trainDataPath) if isfile(join(trainDataPath, f))]
         lstPass = []
         
         #print("[+]Logging sample images' details\n---------------------")
@@ -51,7 +46,8 @@ class preProcessData:
                 imLeft = cv2.resize(imgL, (64, 128) ) 
                 imRight = cv2.resize(imgR, (64, 128))
                 
-                print(f"{(i//2) + 1}. Image names: {img_left} & {img_right}\n\t\tShape-L: {imLeft.shape}     Shape-R: {imRight.shape}\n")
+                print(f"{(i//2) + 1}. Image names: {img_left} & {img_right}\n\t\tShape-L: {imLeft.shape}     \
+                        Shape-R: {imRight.shape}\n")
                 lstPass.append([imLeft, imRight])
                 
                 #cv2.imshow(f"Left {img_left}", imLeft)
@@ -86,15 +82,21 @@ class preProcessData:
     
     
     def createVideo(self):
-        fourcc = cv2.VideoWriter_fourcc(*'DIVX')
-        video = cv2.VideoWriter('out_video.avi', fourcc, 30.0, (588,320))
+        try:
+            fourcc = cv2.VideoWriter_fourcc(*'DIVX')
+            video = cv2.VideoWriter('out_video.avi', fourcc, 30.0, (588,320))
         
-        for imgL, imgR in self.sampleImages:
-            video.write(imgL)
+            for imgL, imgR in self.sampleImages:
+                video.write(imgL)
 
-        video.release()
-        cv2.destroyAllWindows()
-        print(f"[+]Video Released")
+            video.release()
+            cv2.destroyAllWindows()
+            print(f"[+]Video Released")
+            
+        except Exception as err:
+            print(err)
+            print(f"Possible fixes:\n1. See if DIVX is compatible with your machine\n2. Use a media player that supports .avi\n\
+                    3. Match the shape of frames with the video")
 
     
     
@@ -110,16 +112,19 @@ class preProcessData:
             Returns:
                     Frame with a green bounding box around pedestrians
         '''
-        #img = cv2.imread("C:\\Users\\HP\\Desktop\\Research\\Trajectory_Markov_Research\\Implementations\\Dataset_Dailmer\\Data\\TrainingData\\2012-06-05_165931\\RectGrabber\\imgrect_000000227_c0.pgm")
+        #img = cv2.imread("C:\\Users\\HP\\Desktop\\Research\\Trajectory_Markov_Research\\Implementations\
+        #\\Dataset_Dailmer\\Data\\TrainingData\\2012-06-05_165931\\RectGrabber\\imgrect_000000227_c0.pgm")
         #self.showFrame("Scene", img)
         #img = cv2.resize(img, (64, 128))
         pass
     
     
     def __init__(self):
-        print(f"Loaded OpenCV version {cv2.__version__} @ {time.asctime(time.localtime(time.time()))}\n")
-        self.processedData = self.readData()
-        
+        ### Change filepath according to your machine config
+        self.trainDataPath = "C:\\Users\\HP\\Desktop\\Research\\Trajectory_Markov_Research\
+                                \\Implementations\Dataset_Dailmer\\Data\\TrainingData\\"
+        self.processedData = self.readData(self.trainDataPath)
+
 
 class model:
     '''
@@ -151,9 +156,8 @@ class analytics:
     '''
     pass
 
-        
-        
 
+# Create instances here :)
 df = preProcessData()                       # Remove noise, use paper 14, Detect pedestrians(HOG) and then pass to model
 #predicted_df= model(df.processedData)
 #analytics(predicted_df.preds)
