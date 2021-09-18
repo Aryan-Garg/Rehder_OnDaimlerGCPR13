@@ -32,8 +32,8 @@ class preProcessData:
     
     
     def showFrames(self, windowName, imglst):
-        if len(windowName) != imglst:
-            print(f"windowName list len: {len(windowName)} not equal to {len(imglst)}")
+        if len(windowName) != len(imglst):
+            print(f"windowName list len: {len(windowName)} not equal to imglst len: {len(imglst)}")
             return False 
         
         for i in range(len(windowName)):
