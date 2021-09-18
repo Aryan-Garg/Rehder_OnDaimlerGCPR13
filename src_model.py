@@ -1,6 +1,6 @@
-# For all modules that produce an error:
-# In the notebook, before importing, write
-# Replace angular brackets with module name:
+# For all modules that produce a not-found / needs update error:
+# In the notebook, before importing, write after
+# Replacing angular brackets with module name:
 # ! pip install <package-name-as-per-package's-documentation>
 
 import cv2 
