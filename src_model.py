@@ -110,14 +110,75 @@ class preProcessData:
             print(f"Possible fixes:\n1. See if DIVX is compatible with your machine\n2. Use a media player that supports .avi\n\
                     3. Match the shape of frames with the video")
 
+    def detectPedestriansAnnotations(self, dirName, imageList):
+        '''
+            
+            Brief: Making bounding boxes using the annotations provided in dataset
+            
+            Need to use SQL queries here to extract info!!! (.db files are present)
+            
+        '''
+        print(f"DRAWING FOR {dirName}")
+        path_ = 'C:\\Users\\HP\\Desktop\Research\\Trajectory_Markov_Research\\Implementations\\Dataset_Dailmer\\TrainingData_Annotations\\'
+        path_ += str(dirName)+"\\LabelData\\"
+        # creating file path
+        dbfile = path_ + "meas.db"
+        
+        toRet = []
+        with open(dbfile) as f:
+            
+            rd = f.readlines()
+            # Text formatting params:
+            font                   = cv2.FONT_HERSHEY_COMPLEX_SMALL
+            fontScale              = 0.7
+            fontColor              = (255, 255, 255)
+            lineType               = 2
+            for i in range(len(rd)):
+                imgName = ""
+                box_cos = ""
+                
+                if "img" in rd[i]:
+                    imgName = rd[i][:-1]
+                    
+                    if i+6 < len(rd):
+                        box_cos = rd[i+6].split()
+                        if len(box_cos) != 4:
+                            continue
+                    else:
+                        continue
+                    
+                    imgName = "imgrect_"+imgName[4:] 
+                    #print(f"{imgName}:{box_cos}")
+                    
+                    img = cv2.imread( "C:\\Users\\HP\\Desktop\\Research\\Trajectory_Markov_Research\\Implementations\Dataset_Dailmer\\Data\\TrainingData\\" 
+                                     + dirName + "\\RectGrabber\\" + imgName )
+                    
+                    if img is None:
+                        print("[-]Image could not load!")
+                        continue
+                
+                    
+                    box_cos = [int(e) for e in box_cos]
+                    x,y,a,b = box_cos # Top left: (x,y) ; Bottom Right: (a,b)
+                    
+                    cv2.rectangle(img, (x, y), (a,b), (0, 255, 0), 2)
+                    #cv2.putText(img,'Person', (int(x),int(y)), font, fontScale,fontColor,lineType)
+                    
+                    #cv2.imshow("Bounding Box from Annotations", img)
+                    #cv2.waitKey(0)
+                    
+                    toRet.append(img)
+            
+            f.close()
+            return toRet
+
     
-    
-    def detectPedestrians(self, dirName, imageList): 
+    def detectPedestriansHOG(self, dirName, imageList): 
         '''
             Brief: 
                     Standard Histogram Oriented Gradients Object Detection provided by openCV. 
                     (Dalal & Triggs)
-            
+            |
             Param:
                     frame -> For which pedestrian detection must be done
                     
@@ -153,7 +214,8 @@ class preProcessData:
             toRet.append(img)
                 
             #if not self.showFrames(["Bounding Box"], [img]):
-            #    print(f"Couldn't show pedestrian detected image: {img}")
+             #   print(f"Couldn't show pedestrian detected image: {img}")
+            
         
         return toRet
            
@@ -166,7 +228,12 @@ class preProcessData:
             self.showSampleImages()
             self.detectedData = {}
             for key in self.allTrainingData:
-                self.detectedData[key] = self.detectPedestrians(key, self.allTrainingData[key])
+                self.detectedData[key] = self.detectPedestriansAnnotations(key, self.allTrainingData[key])
+            
+            for key in self.allTrainingData:
+                for image in self.trainingData[key]:
+                    cv2.imshow("Bounding Box", image)
+                    cv2.waitKey(60)
 
 
 class model:
