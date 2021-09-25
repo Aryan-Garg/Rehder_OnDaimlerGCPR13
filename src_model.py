@@ -13,6 +13,9 @@ import matplotlib.pyplot as plt
 from os import listdir
 from os.path import isfile, join
 import sys
+import math
+import scipy.stats as stats
+from scipy import signal
 
 
 print(f"[+]Loading essential packages...")
@@ -23,8 +26,8 @@ class preProcessData:
     
     def readData(self, trainDataP):
         try:
-            dirs = [f for f in listdir(trainDataP)]
-            for directory in dirs:
+            self.dirs = [f for f in listdir(trainDataP)]
+            for directory in self.dirs:
                 newPath = self.trainDataPath + directory + "\\RectGrabber\\"
                 files = [f for f in listdir(newPath) if isfile(join(newPath, f))]
                 self.allTrainingData[directory] = files
@@ -118,7 +121,8 @@ class preProcessData:
             Need to use SQL queries here to extract info!!! (.db files are present)
             
         '''
-        print(f"DRAWING FOR {dirName}")
+        print("\nCreating Bounding Boxes...")
+        print(f"\nDRAWING FOR {dirName}")
         path_ = 'C:\\Users\\HP\\Desktop\Research\\Trajectory_Markov_Research\\Implementations\\Dataset_Dailmer\\TrainingData_Annotations\\'
         path_ += str(dirName)+"\\LabelData\\"
         # creating file path
@@ -159,8 +163,12 @@ class preProcessData:
                 
                     
                     box_cos = [int(e) for e in box_cos]
-                    x,y,a,b = box_cos # Top left: (x,y) ; Bottom Right: (a,b)
                     
+                    if dirName not in self.detectedDataBox:
+                        self.detectedDataBox[dirName] = []
+                        
+                    self.detectedDataBox[dirName].append(box_cos) 
+                    x,y,a,b = box_cos # Top left: (x,y) ; Bottom Right: (a,b)
                     cv2.rectangle(img, (x, y), (a,b), (0, 255, 0), 2)
                     #cv2.putText(img,'Person', (int(x),int(y)), font, fontScale,fontColor,lineType)
                     
@@ -223,17 +231,21 @@ class preProcessData:
     def __init__(self):
         ### Change filepath according to your machine config
         self.trainDataPath = "C:\\Users\\HP\\Desktop\\Research\\Trajectory_Markov_Research\\Implementations\Dataset_Dailmer\\Data\\TrainingData\\"
+        self.dirs = []
         self.allTrainingData = dict()
         if self.readData(self.trainDataPath):
-            self.showSampleImages()
+            #self.showSampleImages()
             self.detectedData = {}
+            self.detectedDataBox = {} # Contains TL cos and BR cos of a frame (directory-wise)
+            doOneDir = True
             for key in self.allTrainingData:
-                self.detectedData[key] = self.detectPedestriansAnnotations(key, self.allTrainingData[key])
-            
-            for key in self.allTrainingData:
-                for image in self.trainingData[key]:
-                    cv2.imshow("Bounding Box", image)
-                    cv2.waitKey(60)
+                if doOneDir:
+                    self.detectedData[key] = self.detectPedestriansAnnotations(key, self.allTrainingData[key])
+                    cv2.destroyAllWindows()
+                    break
+                else:
+                    self.detectedData[key] = self.detectPedestriansAnnotations(key, self.allTrainingData[key])
+                    cv2.destroyAllWindows()
 
 
 class model:
@@ -251,37 +263,85 @@ class model:
     '''
     
     # State Transition stuff ahead:
-    def current_speed(self):
-        # Returns instantaneous v_x, v_y
-        pass
+    def compute_X(self, dirName = '2012-04-02_115542', numFramesToObserve = 90):
+        # COMPUTING ONLY FOR THE TL PIXEL OF RECTANGLE 
+        for i in range(1, numFramesToObserve):
+            x1, y1, a1, b1 = self.dfBox[dirName][i-1]
+            x2, y2, a2, b2 = self.dfBox[dirName][i]
+            vx = (x2 - x1) * self.fps    # TODO: Use more valid points to compute an average velocity
+            vy = (y2 - y1) * self.fps
+            #print(f"*** Frames {i-1} and {i} ***\nvx: {vx} px/sec\nvy: {vy} px/sec")
+            psi = 0
+            if (x2-x1) != 0:
+                psi = math.atan(  (y2-y1) / (x2-x1) ) # Slope bw centers of rectangles  
+            #print(f"phi_t: {math.degrees(psi)} degrees\n")
+            self.uni.append([vx, vy, 0])
+            self.X.append([x1 + vx/self.fps, y1 + vy/self.fps, 0 + psi]) # Xt = Xt-1 + u(v_t, psi_t) 
+        self.eq3_phi_t()
     
-    
-    def view30Frames(self, key):
-        pass
-    
-    
-    def eq1_positionTransition(self):
-        self.X.append(X[-1] + self.eq2_unicycle())
-        self.eq3()
-    
-    def eq2_unicyle(self):
-        vx , vy = self.current_speed()
-        return 1/self.fps * (vx, vy, 0)
-    
-    
-    def eq3(self):
+    def eq3_phi_t(self):
         '''
             phi_t = p( X_t | X_t-1 )
             p(Xt|Xt−1) = p(Xt−1) ⊗ p(u(vt, ψt))
         '''
-        pass
+        self.distX = np.zeros(shape=(640, 1176))
+        self.distUni = np.zeros(shape=(640, 1176))
+        n = len(self.X)
+        
+        for i in range(n):
+            self.distX[int(self.X[i][1])][int(self.X[i][0])] = self.X.count(self.X[i]) / n
+            self.distUni[int(self.X[i][1])][int(self.X[i][0])] = self.uni.count(self.uni[i]) / n
+        
+        #print(self.distX)
+        #print(self.distUni)
+        
+        #plt.subplot(1,2,1)
+        #plt.imshow(self.distX)
+        #plt.subplot(1,2,2)
+        #plt.imshow(self.distUni)
+        #plt.show()
+        # Convolve the two grid distributions
+        self.Xt_given_Xt_1 = conv_pmf = signal.fftconvolve(self.distX, self.distUni, 'same')
+        
+        print(f"P(Xt|Xt-1) = P(Xt-1) * p(u(vt,psit)) =\n{self.Xt_given_Xt_1}")
+        
+        for i in range(640):
+            for j in range(1176):           
+                if self.Xt_given_Xt_1[i][j] >= 1:
+                    print(f"cell({i},{j})'s p(Xt|Xt-1) = {self.Xt_given_Xt_1[i][j]}\nNOT POSSIBLE! RE-CHECK CONVOLUTION")
+                
+        #plt.imshow(disp)
+        #plt.show()
+        self.eq4()
     
     def discretization_2_grid(self):
         '''
-            Consider 2x2 cells -> assign probability(from incremental distribution) to each cell
+            Consider 1x1 cells -> assign probability(from incremental distribution) to each cell
             Returns: A (the convolution filter mask) 
         '''
         pass
+    
+    
+    def mean_var(self, samples):
+        mean = sum(samples) / len(samples)
+        var = 0
+        for e in samples:
+            var += (e - mean)**2
+        var /= len(samples)-1 
+        return mean, var
+    
+    
+    def vonMises(self, samples):
+        R = 0                      # 1/N * Summation{e^i.\theta}
+        for i in range(len(samples)):
+            R += math.cos((i+1)*samples[i]) + 1j*math.sin((i+1)samples[i])
+        
+        Rbar = np.abs(R)/len(samples)
+        kappa_v = (2*Rbar - (Rbar**3)) / (1 - (Rbar**2)) # This is an approximation for fast computation only!
+        
+        # TODO: Find closer approximation from Bessel function or Ap^-1
+        return Rbar, kappa_v
+    
     
     def eq4(self):
         '''
@@ -294,20 +354,28 @@ class model:
                             
         Then call self.discretization_2_grid() to get A (the convolution filter mask)
         Then call eq5 to get phi_t using A and phi_t-1
+        
+        v   -> Normal Dist.             
+        psi -> circular Normal Dist.
         '''
-        pass
+        # p[x][y][psi] = model it!!!
+        vx_mu, vx_std = self.mean_var([e[0] for e in self.uni])
+        vy_mu, vy_std = self.mean_var([e[1] for e in self.uni])
+        psi_mu, psi_kappa = self.vonMises([e[2] for e in self.X])
+        # TODO: Now find p(del_x, del_y, del_psi)
     
     
     def eq5(self):
         '''
             Φt ∝ A ⊗ Φt−1
+            where Φt = P( Xt | Xt-1 ) {contained in self.Xt_given_Xt_1} 
         '''
         pass
     
     
     def eq6(self):
         '''
-            Invert distribution in 4 to get A^(-1). 
+            Invert distribution in 4 to get (B)           [A^(-1)]
             *** For backward prediction steps from XT ***
         '''
         pass
@@ -395,19 +463,23 @@ class model:
         pass
     
     
-    def __init__(self, processedData):
-        self.data = processedData
+    def __init__(self, bb_Images, bb_cos):
+        self.df = bb_Images
+        self.dfBox = bb_cos
+        self.grid = np.zeros(shape=(640, 1176)) # Grid
         self.fps = 30                          # fps
-        self.X = []                            # Contains last t-1 positions & orientations: (x_t, y_t, psi_t
+        self.X = []                            # Contains last t positions & orientations: (x_t, y_t, psi_t)
+        self.distX = None                      # Contains X's distribution on grid
+        self.uni = []                          # Contains unicycle vector of motion: u(vt, psi_t) 
+        self.distUni = None                    # Contains uni's distribution on grid as per X's co-ordinates
+        self.Xt_given_Xt_1 = None              # Contains distribution: P(X_t | X_t-1)
         self.px0 = 0
         self.XT = None                         # Latent Variable: Gaussian Mixture Model + Particle Filter
         self.currentFrame = None
-        for key in self.data:
-            self.pX0 = self.view30Frames(key)  # Watch 1 sec to estimate initial params
-            self.currentFrame = self.data[key][30]
-            self.eq1_positionTransition()
-        
-    
+        for key in self.df:
+            self.compute_X(key)  # Watch 1 sec to estimate X
+
+  
 class analytics:
     '''
     Brief:
@@ -423,12 +495,6 @@ class analytics:
     pass
 
 
-# Create instances here :)
-df = preProcessData()                       # Remove noise, use paper 14, Detect pedestrians(HOG) and then pass to model
-print(df.detectedData)
-#predicted_df= model(df.processedData)
+df = preProcessData()                     
+predicted_df = model(df.detectedData, df.detectedDataBox)
 #analytics(predicted_df.preds)
-
-
-#if img.shape != (64, 128):
-#    img = cv2.resize(img, (64, 128))
